@@ -3,6 +3,7 @@ from pygame.surfarray import pixels3d
 import gym
 from gym import spaces
 import numpy as np
+from collections import deque
 
 BLACK = pygame.Color(0,0,0)
 WHITE = pygame.Color(255,255,255)
@@ -20,7 +21,7 @@ class SnakeEnv(gym.Env):
         self._node_size = 10 # size of each node in snake body
         self.action_space = spaces.Discrete(4) # 0:UP, 1:DOWN, 2:LEFT, 3:RIGHT
         self.observation_space = spaces.Box(0, 255, (self._x, self._y, 3), np.uint8)
-        # self.reward_range = (-1, 1)
+        
         self._collide_punish = -100
         self._step_punish = -1
         self._reward = 50
@@ -41,7 +42,6 @@ class SnakeEnv(gym.Env):
             else:
                 pygame.draw.rect(self._surface,WHITE,pygame.Rect(i[0],i[1],self._node_size,self._node_size))
         
-        # pygame.draw.rect(self._surface,RED,pygame.Rect(self._food_pos[0],self._food_pos[1],self._node_size,self._node_size))
         pygame.draw.circle(self._surface, GREEN, (self._food_pos[0] + 5, self._food_pos[1] + 5), self._node_size/2)
 
         return np.transpose( # 3D rgb array
@@ -52,7 +52,7 @@ class SnakeEnv(gym.Env):
         super().reset(seed=seed)
 
         self._snake_pos = [100,50]
-        self._snake_body = [[100,50],[90,50],[80,50]]
+        self._snake_body = deque([[100,50],[90,50],[80,50]])
         self._food_pos = self._spawn_food()
 
         self._action = 3
@@ -68,8 +68,8 @@ class SnakeEnv(gym.Env):
 
     def _eat_check(self):
         if self._food_pos == self._snake_pos:
-            self._score += 1
-            self._snake_body.append(list(self._snake_body[-1])) # increase a extra dummy node
+            self._score += self._reward
+            self._snake_body.append(list(self._snake_body[-1])) # increase a extra dummy node at the end
             self._food_pos = self._spawn_food()
             return self._reward
         else:
@@ -97,7 +97,7 @@ class SnakeEnv(gym.Env):
         if self._direction == 'RIGHT':
             self._snake_pos[0] += self._node_size
             
-        self._snake_body.insert(0,list(self._snake_pos))
+        self._snake_body.appendleft(list(self._snake_pos))
         self._snake_body.pop()
     
     def step(self,action):
@@ -122,9 +122,12 @@ class SnakeEnv(gym.Env):
             return self._collide_punish, True
 
         # collide with itself
-        for i in self._snake_body[1:]:
-            if i == self._snake_pos:
-                return self._collide_punish, True
+        j=0
+        for i in self._snake_body:
+            if j>0:
+                if i == self._snake_pos:
+                    return self._collide_punish, True
+            j+=1
         
         return self._step_punish, False
 
