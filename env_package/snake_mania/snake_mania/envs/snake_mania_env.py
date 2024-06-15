@@ -20,7 +20,10 @@ class SnakeEnv(gym.Env):
         self._node_size = 10 # size of each node in snake body
         self.action_space = spaces.Discrete(4) # 0:UP, 1:DOWN, 2:LEFT, 3:RIGHT
         self.observation_space = spaces.Box(0, 255, (self._x, self._y, 3), np.uint8)
-        self.reward_range = (-1, 1)
+        # self.reward_range = (-1, 1)
+        self._collide_punish = -100
+        self._step_punish = -1
+        self._reward = 50
 
         self._render_mode = None # it will be pass in render fn
         self._display = None # keep it None until human render is not required
@@ -68,9 +71,9 @@ class SnakeEnv(gym.Env):
             self._score += 1
             self._snake_body.append(list(self._snake_body[-1])) # increase a extra dummy node
             self._food_pos = self._spawn_food()
-            return 1
+            return self._reward
         else:
-            return 0
+            return self._step_punish
 
     def _change_direction(self):
         if self._action==0 and self._direction != 'DOWN':
@@ -114,16 +117,16 @@ class SnakeEnv(gym.Env):
     def _game_over_check(self):
         # out of boundary
         if  self._snake_pos[0] < 0 or self._snake_pos[0] > self._x - self._node_size:
-            return -1, True
+            return self._collide_punish, True
         if  self._snake_pos[1] < 0 or self._snake_pos[1] > self._y - self._node_size:
-            return -1, True
+            return self._collide_punish, True
 
         # collide with itself
         for i in self._snake_body[1:]:
             if i == self._snake_pos:
-                return -1, True
+                return self._collide_punish, True
         
-        return 0, False
+        return self._step_punish, False
 
     def render(self, mode='None'):
 
