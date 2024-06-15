@@ -17,6 +17,7 @@ class SnakeEnv(gym.Env):
         self.action_space = spaces.Discrete(4)
         self.x = 200
         self.y = 200
+        self.observation_space = spaces.Box(0, 255, (self.x, self.y, 3), np.uint8)
         self.game_window = pygame.display.set_mode((self.x,self.y))
         self.LIMIT_STEP = 1000
         self.reset()
