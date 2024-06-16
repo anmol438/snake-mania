@@ -19,3 +19,5 @@ env = gym.make(env_name)
 # Running the snake mania game
 
 Run the <code>env_test.py</code> file to explore the environment.  
+
+https://github.com/anmol438/snake-mania/assets/50985412/20d1e248-50da-4f03-b3ba-99a8d2532cef
