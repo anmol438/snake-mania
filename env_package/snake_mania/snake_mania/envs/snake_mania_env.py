@@ -16,11 +16,13 @@ class SnakeEnv(gym.Env):
 
     def __init__(self):
         
-        self._x = 200
-        self._y = 200
+        # working in coordinate system : X axis increasing toward right, Y axis increasing toward down
+        # shape (rows, cols) = coordinate (y, x)
+        self._x = 150 # number of cols
+        self._y = 200 # number of rows
         self._node_size = 10 # size of each node in snake body
         self.action_space = spaces.Discrete(4) # 0:UP, 1:DOWN, 2:LEFT, 3:RIGHT
-        self.observation_space = spaces.Box(0, 255, (self._x, self._y, 3), np.uint8)
+        self.observation_space = spaces.Box(0, 255, (self._y, self._x, 3), np.uint8)
         
         self._collide_punish = -100
         self._step_punish = -1
@@ -51,8 +53,8 @@ class SnakeEnv(gym.Env):
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
 
-        self._snake_pos = [100,50]
-        self._snake_body = deque([[100,50],[90,50],[80,50]])
+        self._snake_pos = [80,100]
+        self._snake_body = deque([[80,100],[70,100],[60,100]])
         self._food_pos = self._spawn_food()
 
         self._action = 3
