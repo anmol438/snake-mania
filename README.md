@@ -1,23 +1,23 @@
-# snake-mania
-A OpenAI Gym based environment for training a snake to eat food.
+
+# Environment: snake-mania
+A custom OpenAI Gym based environment for training a snake to eat food.
 
 # Installing environment
+Create a python environment with python version >= 3.8  
+Run command <code>pip install -e snake-mania</code> in <code>./env_package/</code> folder to install the snakemania gym environment.
 
-Run command <code>pip install -e snake_mania</code> from root folder to install the snakemania gym environment.
+# Creating Environment Instance
+After installating the package, you can create the instance of the evironment as:
+```python
+import gym
+import snake_mania
+
+env_name = 'snakemania-v0'
+env = gym.make(env_name)
+```
 
 # Running the snake mania game
 
-Run <code>python main.py</code> command in root folder to execute the main file.  
-main.py contain the basic code which uses snakemaina gym environment and render a randomly moving snake and its food.
+Run the <code>env_test.py</code> file to explore the environment.  
 
-
-![Img1](https://user-images.githubusercontent.com/50985412/197620849-7581f42f-0777-41c7-ad21-0509803d9fb5.png)
-
-
-https://user-images.githubusercontent.com/50985412/197620864-e4de46e7-5bf9-447e-9b3a-91a2a8542fc2.mp4
-
-![Img2](https://user-images.githubusercontent.com/50985412/197620873-516d58ee-3031-405b-8911-4b0ff4c7cef3.png)
-
-
-https://user-images.githubusercontent.com/50985412/197620889-ef1c8072-b5f0-4115-b4f4-02d52bdc257d.mp4
-
+https://github.com/anmol438/snake-mania/assets/50985412/20d1e248-50da-4f03-b3ba-99a8d2532cef
