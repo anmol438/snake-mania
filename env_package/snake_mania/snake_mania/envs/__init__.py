@@ -1,1 +1,0 @@
-from snake_mania.envs.snake_mania_env import SnakeEnv
