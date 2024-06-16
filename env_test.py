@@ -1,10 +1,11 @@
 import gym
-import time
+import snake_mania # need to load the environment
 
-env_name = 'snake_mania:snakemania-v0'
+env_name = 'snakemania-v0'
 env = gym.make(env_name)
+env.metadata['render_fps'] = 20 # default is 30, can be changed like this
 
-for episode in range(1000):
+for episode in range(10):
     env.reset()
     total_reward = 0
     while True:
@@ -14,9 +15,6 @@ for episode in range(1000):
         env.render(mode='human')
         if done:
             break
-        time.sleep(0.05)
 
-    print(f'Episode : {episode}, Total reward : {total_reward},  {info}, steps: {env.steps}')
-
+    print(f'Episode : {episode}, Total reward : {total_reward},  {info}')
 env.close()
-

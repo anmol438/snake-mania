@@ -1,0 +1,6 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+snakemania.egg-info/
