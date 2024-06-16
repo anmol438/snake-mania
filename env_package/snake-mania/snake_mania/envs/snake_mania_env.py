@@ -12,7 +12,7 @@ GREEN = pygame.Color(0,255,0)
 
 
 class SnakeEnv(gym.Env):
-    metadata = {"render_modes": ["human", "rgb_array"], 'render_fps':4} # allowed rendering modes
+    metadata = {"render_modes": ["human", "rgb_array"], 'render_fps':30} # allowed rendering modes
 
     def __init__(self):
         
@@ -137,9 +137,9 @@ class SnakeEnv(gym.Env):
         
         return self._step_punish, False
 
-    def render(self, mode='None'):
+    def render(self, mode='rgb_array'):
 
-        if not (mode is None or mode in self.metadata["render_modes"]): # not supported render mode
+        if not (mode in self.metadata["render_modes"]): # not supported render mode
             raise ValueError("SnakeEnv only support 'rgb_array' and 'human' render modes.")
         self._render_mode = mode
             
