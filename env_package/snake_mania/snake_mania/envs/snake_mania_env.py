@@ -76,6 +76,9 @@ class SnakeEnv(gym.Env):
             return self._reward
         else:
             return self._step_punish
+        
+    def get_action_meanings(self):
+        return ['UP', 'DOWN', 'LEFT', 'RIGHT']
 
     def _change_direction(self):
         if self._action==0 and self._direction != 'DOWN':
