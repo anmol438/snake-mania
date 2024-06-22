@@ -79,24 +79,24 @@ if __name__ == '__main__':
     max_ep_step = 10000 # max_ep_step*4 = ALE frames per episode
 
     # for epsilon greedy
-    decay_steps = 2500 
+    decay_steps = 50000
 
     # for optimizer
     lr = 5e-4 # size of the steps in gradient descent
     rho = 0.95 # decay rate of the moving average of squared gradients
     epsilon = 1e-7 # Improves numerical stability
 
-    rb_len = 1000
+    rb_len = 100000
     collect_driver_steps = 4
-    initial_driver_steps = 2000
-    target_update = 20
+    initial_driver_steps = 10000
+    target_update = 5000
     train_step = tf.Variable(0)
     last_train_step = train_step.value()
     discount_factor = 0.99
     batch_size = 64
-    max_training_iterations = 3000 # = total number of iterations for overall training.
-    segmented_iterations = 1000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations.
-    n_segment_runs = 1 # run a segmented iteration this number of times
+    max_training_iterations = 1000000 # = total number of iterations for overall training.
+    segmented_iterations = 50000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations.
+    n_segment_runs = 3 # run a segmented iteration this number of times
     iterations = n_segment_runs*segmented_iterations # there can be more iterations than this because the train loop will also add any number of iterations left from from previous checkpoint because of any failure
     
     # number of intervals per segment run.
@@ -105,10 +105,10 @@ if __name__ == '__main__':
     eval_interval = segmented_iterations // 2
 
     training_video_interval = segmented_iterations // 2
-    training_video_length = 200
+    training_video_length = 2000
     record_training_flag = True # whether to record training or not
 
-    checkpoint_interval = segmented_iterations // 2
+    checkpoint_interval = segmented_iterations // 4
 
     render_data = []
     avg_returns = []
