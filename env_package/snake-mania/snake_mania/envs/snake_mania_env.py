@@ -40,6 +40,8 @@ class SnakeEnv(gym.Env):
 
     def _get_obs(self):
         self._surface.fill(BLACK)
+        pygame.draw.circle(self._surface, GREEN, (self._food_pos[0] + 5, self._food_pos[1] + 5), self._node_size/2)
+
         j=0
         for i in self._snake_body:
             if j==0:
@@ -48,8 +50,6 @@ class SnakeEnv(gym.Env):
             else:
                 pygame.draw.rect(self._surface,WHITE,pygame.Rect(i[0],i[1],self._node_size,self._node_size))
         
-        pygame.draw.circle(self._surface, GREEN, (self._food_pos[0] + 5, self._food_pos[1] + 5), self._node_size/2)
-
         return np.transpose( # 3D rgb array
                 np.array(pixels3d(self._surface)), axes=(1, 0, 2)
             )
@@ -57,6 +57,7 @@ class SnakeEnv(gym.Env):
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
 
+        self._snake_body_ind.fill(0)
         self._snake_pos = [80,100]
         self._snake_body = deque([[80,100],[70,100],[60,100]])
         for node in self._snake_body:
@@ -73,13 +74,22 @@ class SnakeEnv(gym.Env):
         return self._get_obs()
 
     def _spawn_food(self):
-        return [random.randrange(1,self._x//self._node_size)*self._node_size, random.randrange(1,self._y//self._node_size)*self._node_size]
+        available_node = []
+        for i in range(0,self._x,10):
+            for j in range(0, self._y, 10):
+                if not self._snake_body_ind[i//self._node_size][j//self._node_size]:
+                    available_node.append([i,j])
+
+        return random.choice(available_node)
+
+        # return [random.randrange(1,self._x//self._node_size)*self._node_size, random.randrange(1,self._y//self._node_size)*self._node_size]
 
     def _eat_check(self):
         if self._food_pos == self._snake_pos:
             self._score += self._reward
             self._eaten = True
-            self._food_pos = self._spawn_food()
+            if len(self._snake_body) < ((self._x//self._node_size)*(self._y//self._node_size)):
+                self._food_pos = self._spawn_food()
             return self._reward
         else:
             return self._step_punish
