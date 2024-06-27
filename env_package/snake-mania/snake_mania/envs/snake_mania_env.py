@@ -82,8 +82,6 @@ class SnakeEnv(gym.Env):
 
         return random.choice(available_node)
 
-        # return [random.randrange(1,self._x//self._node_size)*self._node_size, random.randrange(1,self._y//self._node_size)*self._node_size]
-
     def _eat_check(self):
         if self._food_pos == self._snake_pos:
             self._score += self._reward
@@ -156,12 +154,8 @@ class SnakeEnv(gym.Env):
             return self._collide_punish, True
 
         # collide with itself
-        j=0
-        for i in self._snake_body:
-            if j>0:
-                if i == self._snake_pos:
-                    return self._collide_punish, True
-            j+=1
+        if self._snake_body_ind[self._snake_pos[0]//self._node_size][self._snake_pos[1]//self._node_size] > 1:
+            return self._collide_punish, True
         
         return self._step_punish, False
 
