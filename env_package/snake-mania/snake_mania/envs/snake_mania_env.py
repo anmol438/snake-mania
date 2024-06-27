@@ -24,9 +24,12 @@ class SnakeEnv(gym.Env):
         self.action_space = spaces.Discrete(4) # 0:UP, 1:DOWN, 2:LEFT, 3:RIGHT
         self.observation_space = spaces.Box(0, 255, (self._y, self._x, 3), np.uint8)
         
+        self._eaten = False
         self._collide_punish = -100
         self._step_punish = -1
         self._reward = 50
+        self._empty_grid = []
+        self._snake_body_ind = np.zeros((self._x//self._node_size, self._y//self._node_size))
 
         self._render_mode = None # it will be pass in render fn
         self._display = None # keep it None until human render is not required
@@ -56,6 +59,9 @@ class SnakeEnv(gym.Env):
 
         self._snake_pos = [80,100]
         self._snake_body = deque([[80,100],[70,100],[60,100]])
+        for node in self._snake_body:
+            self._snake_body_ind[node[0]//self._node_size][node[1]//self._node_size] += 1
+        
         self._food_pos = self._spawn_food()
 
         self._action = 3
@@ -72,7 +78,7 @@ class SnakeEnv(gym.Env):
     def _eat_check(self):
         if self._food_pos == self._snake_pos:
             self._score += self._reward
-            self._snake_body.append(list(self._snake_body[-1])) # increase a extra dummy node at the end
+            self._eaten = True
             self._food_pos = self._spawn_food()
             return self._reward
         else:
@@ -104,7 +110,12 @@ class SnakeEnv(gym.Env):
             self._snake_pos[0] += self._node_size
             
         self._snake_body.appendleft(list(self._snake_pos))
-        self._snake_body.pop()
+        if self._in_bounds():
+            self._snake_body_ind[self._snake_pos[0]//self._node_size][self._snake_pos[1]//self._node_size] += 1
+        if not self._eaten:
+            popped = self._snake_body.pop()
+            self._snake_body_ind[popped[0]//self._node_size][popped[1]//self._node_size] -= 1
+        self._eaten = False
     
     def step(self,action):
             self._action = action
@@ -120,11 +131,18 @@ class SnakeEnv(gym.Env):
 
             return obs, reward, done, info
 
-    def _game_over_check(self):
-        # out of boundary
+    def _in_bounds(self):
         if  self._snake_pos[0] < 0 or self._snake_pos[0] > self._x - self._node_size:
-            return self._collide_punish, True
+            return False
+        
         if  self._snake_pos[1] < 0 or self._snake_pos[1] > self._y - self._node_size:
+            return False
+        
+        return True
+
+    def _game_over_check(self):
+        
+        if not self._in_bounds():
             return self._collide_punish, True
 
         # collide with itself
