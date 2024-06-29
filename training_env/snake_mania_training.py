@@ -79,7 +79,7 @@ if __name__ == '__main__':
     max_ep_step = 10000 # max_ep_step*4 = ALE frames per episode
 
     # for epsilon greedy
-    decay_steps = 300000
+    decay_steps = 400000
 
     # for optimizer
     lr = 5e-4 # size of the steps in gradient descent
@@ -94,21 +94,21 @@ if __name__ == '__main__':
     last_train_step = train_step.value()
     discount_factor = 0.99
     batch_size = 64
-    max_training_iterations = 1000000 # = total number of iterations for overall training.
-    segmented_iterations = 100000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations.
-    n_segment_runs = 8 # run a segmented iteration this number of times
+    max_training_iterations = 10000000 # = total number of iterations for overall training.
+    segmented_iterations = 1000000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations.
+    n_segment_runs = 1 # run a segmented iteration this number of times
     iterations = n_segment_runs*segmented_iterations # there can be more iterations than this because the train loop will also add any number of iterations left from from previous checkpoint because of any failure
     
     # number of intervals per segment run.
 
-    log_interval = segmented_iterations // 50
-    eval_interval = segmented_iterations // 2
+    log_interval = segmented_iterations // 100
+    eval_interval = segmented_iterations // 5
 
-    training_video_interval = segmented_iterations // 2
+    training_video_interval = segmented_iterations // 5
     training_video_length = 2000
     record_training_flag = True # whether to record training or not
 
-    checkpoint_interval = segmented_iterations // 2
+    checkpoint_interval = segmented_iterations // 5
 
     render_data = []
     avg_returns = []
