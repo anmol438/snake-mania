@@ -17,7 +17,7 @@ from tf_agents.eval.metric_utils import log_metrics
 from tensorflow.keras.layers import Layer
 from tensorflow.keras.optimizers.schedules import PolynomialDecay
 from tensorflow.keras.losses import Huber
-from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.optimizers import RMSprop, Adam
 import snake_mania
 
 from datetime import datetime
@@ -79,12 +79,13 @@ if __name__ == '__main__':
     max_ep_step = 10000 # max_ep_step*4 = ALE frames per episode
 
     # for epsilon greedy
-    decay_steps = 400000
+    policy_decay_steps = 1000000
 
     # for optimizer
-    lr = 5e-4 # size of the steps in gradient descent
-    rho = 0.95 # decay rate of the moving average of squared gradients
-    epsilon = 1e-7 # Improves numerical stability
+    lr_decay_steps = 1000000
+    # lr = 5e-4 # size of the steps in gradient descent
+    # rho = 0.95 # decay rate of the moving average of squared gradients
+    # epsilon = 1e-7 # Improves numerical stability
 
     rb_len = 500000
     collect_driver_steps = 4
@@ -130,30 +131,40 @@ if __name__ == '__main__':
     # Create a Q network
 
     conv_layer = [(32,(8,8),4), (64,(4,4),2), (64,(4,4),1)] # 3 convolutional layers (filters, kernel size(height, width), stride)
-    fc_layer = [512] # 1 dense layer with 512 neurons
+    fc_layer = [512,256,128] # 3 dense layer
+    dropout_layer = [0.4,0.3,0.2]
 
     q_net = QNetwork(
         train_tf_env.observation_spec(),
         train_tf_env.action_spec(),
         preprocessing_layers=PreprocessImg(),
         conv_layer_params=conv_layer,
-        fc_layer_params=fc_layer
+        fc_layer_params=fc_layer,
+        dropout_layer_params=dropout_layer
     )
 
     # Create a DQN agent
 
     epsilon_greedy = PolynomialDecay(
         initial_learning_rate=1.0,
-        decay_steps=decay_steps,
-        end_learning_rate=0.05
+        decay_steps=policy_decay_steps,
+        end_learning_rate=0.01
     )
 
-    optimizer = RMSprop(
-        learning_rate=lr,
-        rho=rho,
-        epsilon=epsilon,
-        centered=True
+    # optimizer = RMSprop(
+    #     learning_rate=lr,
+    #     rho=rho,
+    #     epsilon=epsilon,
+    #     centered=True
+    # )
+
+    lr = PolynomialDecay(
+        initial_learning_rate=1e-3,
+        decay_steps=lr_decay_steps,
+        end_learning_rate=1e-5
     )
+
+    optimizer = Adam(learning_rate=lr)
 
     loss_fn = Huber(reduction='none')
 
