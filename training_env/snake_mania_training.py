@@ -105,7 +105,7 @@ if __name__ == '__main__':
     eval_interval = segmented_iterations // 5
 
     training_video_interval = segmented_iterations // 5
-    training_video_length = 2000
+    training_video_length = 600
     record_training_flag = True # whether to record training or not
 
     checkpoint_interval = segmented_iterations // 5
@@ -266,7 +266,7 @@ if __name__ == '__main__':
                     test_tf_env=test_tf_env,
                     policy=agent.policy,
                     filename=f'eval_video_step_{train_step.read_value()}',
-                    num_episodes=1,
+                    num_episodes=3,
                     fps=20,
                 )
 
