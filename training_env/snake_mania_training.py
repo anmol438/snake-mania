@@ -79,7 +79,7 @@ if __name__ == '__main__':
     max_ep_step = 10000 # max_ep_step*4 = ALE frames per episode
 
     # for epsilon greedy
-    policy_decay_steps = 1000000
+    policy_decay_steps = 600000
 
     # for optimizer
     lr_decay_steps = 1000000
