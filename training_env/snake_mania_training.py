@@ -96,8 +96,8 @@ if __name__ == '__main__':
     discount_factor = 0.99
     batch_size = 64
     max_training_iterations = 10000000 # = total number of iterations for overall training.
-    segmented_iterations = 1000000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations.
-    n_segment_runs = 1 # run a segmented iteration this number of times
+    segmented_iterations = 1000000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/10 of total iterations. (12 hrs)
+    n_segment_runs = 5 # run a segmented iteration this number of times
     iterations = n_segment_runs*segmented_iterations # there can be more iterations than this because the train loop will also add any number of iterations left from from previous checkpoint because of any failure
     
     # number of intervals per segment run.
