@@ -131,8 +131,8 @@ if __name__ == '__main__':
     # Create a Q network
 
     conv_layer = [(32,(8,8),4), (64,(4,4),2), (64,(4,4),1)] # 3 convolutional layers (filters, kernel size(height, width), stride)
-    fc_layer = [512,256,128] # 3 dense layer
-    dropout_layer = [0.4,0.3,0.2]
+    fc_layer = [512,256] # 2 dense layer
+    dropout_layer = [0.2,0.1]
 
     q_net = QNetwork(
         train_tf_env.observation_spec(),
