@@ -82,7 +82,7 @@ if __name__ == '__main__':
     policy_decay_steps = 600000
 
     # for optimizer
-    lr_decay_steps = 1000000
+    lr_decay_steps = 2000000
     # lr = 5e-4 # size of the steps in gradient descent
     # rho = 0.95 # decay rate of the moving average of squared gradients
     # epsilon = 1e-7 # Improves numerical stability
