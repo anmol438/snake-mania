@@ -79,10 +79,10 @@ if __name__ == '__main__':
     max_ep_step = 10000 # max_ep_step*4 = ALE frames per episode
 
     # for epsilon greedy
-    policy_decay_steps = 600000
+    policy_decay_steps = 500000
 
     # for optimizer
-    lr_decay_steps = 2000000
+    lr_decay_steps = 1500000
     # lr = 5e-4 # size of the steps in gradient descent
     # rho = 0.95 # decay rate of the moving average of squared gradients
     # epsilon = 1e-7 # Improves numerical stability
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     batch_size = 64
     max_training_iterations = 10000000 # = total number of iterations for overall training.
     segmented_iterations = 1000000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/10 of total iterations. (12 hrs)
-    n_segment_runs = 5 # run a segmented iteration this number of times
+    n_segment_runs = 1 # run a segmented iteration this number of times
     iterations = n_segment_runs*segmented_iterations # there can be more iterations than this because the train loop will also add any number of iterations left from from previous checkpoint because of any failure
     
     # number of intervals per segment run.
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
     conv_layer = [(32,(8,8),4), (64,(4,4),2), (64,(4,4),1)] # 3 convolutional layers (filters, kernel size(height, width), stride)
     fc_layer = [512,256] # 2 dense layer
-    dropout_layer = [0.2,0.1]
+    dropout_layer = [0.1,0.]
 
     q_net = QNetwork(
         train_tf_env.observation_spec(),
@@ -140,7 +140,7 @@ if __name__ == '__main__':
         preprocessing_layers=PreprocessImg(),
         conv_layer_params=conv_layer,
         fc_layer_params=fc_layer,
-        dropout_layer_params=dropout_layer
+        # dropout_layer_params=dropout_layer
     )
 
     # Create a DQN agent
@@ -159,7 +159,7 @@ if __name__ == '__main__':
     # )
 
     lr = PolynomialDecay(
-        initial_learning_rate=1e-3,
+        initial_learning_rate=1e-4,
         decay_steps=lr_decay_steps,
         end_learning_rate=1e-5
     )
