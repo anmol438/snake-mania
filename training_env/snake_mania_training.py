@@ -94,18 +94,18 @@ if __name__ == '__main__':
     train_step = tf.Variable(0)
     last_train_step = train_step.value()
     discount_factor = 0.99
-    batch_size = 64
+    batch_size = 128
     max_training_iterations = 10000000 # = total number of iterations for overall training.
-    segmented_iterations = 1000000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/10 of total iterations. (12 hrs)
-    n_segment_runs = 1 # run a segmented iteration this number of times
+    segmented_iterations = 500000 # dividing the total iterations to run in small segments. e.g. 1 segment = 1/20 of total iterations. (9 hrs)
+    n_segment_runs = 2 # run a segmented iteration this number of times
     iterations = n_segment_runs*segmented_iterations # there can be more iterations than this because the train loop will also add any number of iterations left from from previous checkpoint because of any failure
     
     # number of intervals per segment run.
 
-    log_interval = segmented_iterations // 100
-    eval_interval = segmented_iterations // 5
+    log_interval = segmented_iterations // 50
+    eval_interval = segmented_iterations // 2
 
-    training_video_interval = segmented_iterations // 5
+    training_video_interval = segmented_iterations // 2
     training_video_length = 600
     record_training_flag = True # whether to record training or not
 
@@ -131,16 +131,14 @@ if __name__ == '__main__':
     # Create a Q network
 
     conv_layer = [(32,(8,8),4), (64,(4,4),2), (64,(4,4),1)] # 3 convolutional layers (filters, kernel size(height, width), stride)
-    fc_layer = [512,256] # 2 dense layer
-    dropout_layer = [0.1,0.]
+    fc_layer = [512,256,128] # 3 dense layer
 
     q_net = QNetwork(
         train_tf_env.observation_spec(),
         train_tf_env.action_spec(),
         preprocessing_layers=PreprocessImg(),
         conv_layer_params=conv_layer,
-        fc_layer_params=fc_layer,
-        # dropout_layer_params=dropout_layer
+        fc_layer_params=fc_layer
     )
 
     # Create a DQN agent
@@ -148,7 +146,7 @@ if __name__ == '__main__':
     epsilon_greedy = PolynomialDecay(
         initial_learning_rate=1.0,
         decay_steps=policy_decay_steps,
-        end_learning_rate=0.01
+        end_learning_rate=0.1
     )
 
     # optimizer = RMSprop(

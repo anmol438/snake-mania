@@ -1,19 +1,19 @@
-2024-07-04 18:54:00,024 - WARNING
+2024-07-10 23:54:49,280 - WARNING
 From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
  
 
-2024-07-04 18:54:15,949 - WARNING
+2024-07-10 23:55:09,639 - WARNING
 From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\tensorflow\python\autograph\impl\api.py:377: ReplayBuffer.get_next (from tf_agents.replay_buffers.replay_buffer) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use `as_dataset(..., single_deterministic_pass=False) instead. 
 
-2024-07-04 18:54:17,311 - INFO
+2024-07-10 23:55:10,971 - INFO
 No checkpoint available at ./checkpoint 
 
-2024-07-04 18:54:17,311 - INFO
+2024-07-10 23:55:10,987 - INFO
 Starting training from scratch 
 
-2024-07-04 18:54:33,148 - WARNING
+2024-07-10 23:55:26,339 - WARNING
 From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\tensorflow\python\util\dispatch.py:1260: calling foldr_v2 (from tensorflow.python.ops.functional_ops) with back_prop=False is deprecated and will be removed in a future version.
 Instructions for updating:
 back_prop=False is deprecated. Consider using tf.stop_gradient instead.
@@ -22,2019 +22,513 @@ results = tf.foldr(fn, elems, back_prop=False)
 Use:
 results = tf.nest.map_structure(tf.stop_gradient, tf.foldr(fn, elems)) 
 
-2024-07-04 19:00:51,599 - INFO
+2024-07-11 00:05:24,640 - INFO
 
          Step : 10000
-         Loss : 2.092866897583008 
-		 NumberOfEpisodes = 1080
+         Loss : 0.8660291433334351 
+		 NumberOfEpisodes = 1104
 		 EnvironmentSteps = 40000
-		 AverageReturn = -136.60000610351562
-		 AverageEpisodeLength = 37.599998474121094 
+		 AverageReturn = -133.89999389648438
+		 AverageEpisodeLength = 40.0 
 
-2024-07-04 19:07:05,887 - INFO
+2024-07-11 00:15:17,633 - INFO
 
          Step : 20000
-         Loss : 0.9214816093444824 
-		 NumberOfEpisodes = 2185
+         Loss : 0.42986854910850525 
+		 NumberOfEpisodes = 2247
 		 EnvironmentSteps = 80000
-		 AverageReturn = -138.89999389648438
-		 AverageEpisodeLength = 39.900001525878906 
+		 AverageReturn = -127.80000305175781
+		 AverageEpisodeLength = 28.799999237060547 
 
-2024-07-04 19:13:26,383 - INFO
+2024-07-11 00:25:13,447 - INFO
 
          Step : 30000
-         Loss : 0.10544103384017944 
-		 NumberOfEpisodes = 3283
+         Loss : 0.4396006464958191 
+		 NumberOfEpisodes = 3373
 		 EnvironmentSteps = 120000
-		 AverageReturn = -133.10000610351562
-		 AverageEpisodeLength = 44.29999923706055 
+		 AverageReturn = -128.8000030517578
+		 AverageEpisodeLength = 34.900001525878906 
 
-2024-07-04 19:20:43,835 - INFO
+2024-07-11 00:35:47,751 - INFO
 
          Step : 40000
-         Loss : 0.014708802103996277 
-		 NumberOfEpisodes = 4234
+         Loss : 0.014295600354671478 
+		 NumberOfEpisodes = 4408
 		 EnvironmentSteps = 160000
-		 AverageReturn = -145.5
-		 AverageEpisodeLength = 51.599998474121094 
+		 AverageReturn = -132.10000610351562
+		 AverageEpisodeLength = 43.29999923706055 
 
-2024-07-04 19:27:45,205 - INFO
+2024-07-11 00:46:38,504 - INFO
 
          Step : 50000
-         Loss : 0.7852612733840942 
-		 NumberOfEpisodes = 5219
+         Loss : 0.04658597707748413 
+		 NumberOfEpisodes = 5378
 		 EnvironmentSteps = 200000
-		 AverageReturn = -122.30000305175781
-		 AverageEpisodeLength = 38.599998474121094 
+		 AverageReturn = -130.3000030517578
+		 AverageEpisodeLength = 31.299999237060547 
 
-2024-07-04 19:34:56,224 - INFO
+2024-07-11 00:57:51,540 - INFO
 
          Step : 60000
-         Loss : 0.012108907103538513 
-		 NumberOfEpisodes = 6316
+         Loss : 0.39006781578063965 
+		 NumberOfEpisodes = 6429
 		 EnvironmentSteps = 240000
-		 AverageReturn = -134.89999389648438
-		 AverageEpisodeLength = 35.900001525878906 
+		 AverageReturn = -132.60000610351562
+		 AverageEpisodeLength = 38.70000076293945 
 
-2024-07-04 19:41:59,090 - INFO
+2024-07-11 01:08:41,824 - INFO
 
          Step : 70000
-         Loss : 0.7966580390930176 
-		 NumberOfEpisodes = 7309
+         Loss : 0.013113128952682018 
+		 NumberOfEpisodes = 7478
 		 EnvironmentSteps = 280000
-		 AverageReturn = -130.10000610351562
-		 AverageEpisodeLength = 31.100000381469727 
+		 AverageReturn = -142.39999389648438
+		 AverageEpisodeLength = 43.400001525878906 
 
-2024-07-04 19:48:51,461 - INFO
+2024-07-11 01:19:39,972 - INFO
 
          Step : 80000
-         Loss : 0.017894312739372253 
-		 NumberOfEpisodes = 8386
+         Loss : 0.00921139307320118 
+		 NumberOfEpisodes = 8503
 		 EnvironmentSteps = 320000
-		 AverageReturn = -123.30000305175781
-		 AverageEpisodeLength = 34.5 
+		 AverageReturn = -139.3000030517578
+		 AverageEpisodeLength = 50.5 
 
-2024-07-04 19:55:43,714 - INFO
+2024-07-11 01:30:44,457 - INFO
 
          Step : 90000
-         Loss : 0.761509358882904 
-		 NumberOfEpisodes = 9504
+         Loss : 0.010293466970324516 
+		 NumberOfEpisodes = 9614
 		 EnvironmentSteps = 360000
-		 AverageReturn = -158.10000610351562
-		 AverageEpisodeLength = 59.099998474121094 
+		 AverageReturn = -130.0
+		 AverageEpisodeLength = 46.29999923706055 
 
-2024-07-04 20:02:37,273 - INFO
+2024-07-11 01:41:46,980 - INFO
 
          Step : 100000
-         Loss : 0.024217337369918823 
-		 NumberOfEpisodes = 10741
+         Loss : 0.02404884248971939 
+		 NumberOfEpisodes = 10681
 		 EnvironmentSteps = 400000
-		 AverageReturn = -127.0999984741211
-		 AverageEpisodeLength = 33.20000076293945 
+		 AverageReturn = -131.8000030517578
+		 AverageEpisodeLength = 37.900001525878906 
 
-2024-07-04 20:09:20,715 - INFO
+2024-07-11 01:41:46,980 - INFO
+======= Saving checkpoint at step 100000 ======= 
+
+2024-07-11 01:41:48,343 - INFO
+Saved checkpoint: ./checkpoint\ckpt-100000 
+
+2024-07-11 01:52:31,743 - INFO
 
          Step : 110000
-         Loss : 1.5170631408691406 
-		 NumberOfEpisodes = 11844
+         Loss : 0.010310295037925243 
+		 NumberOfEpisodes = 11841
 		 EnvironmentSteps = 440000
-		 AverageReturn = -140.10000610351562
-		 AverageEpisodeLength = 56.400001525878906 
+		 AverageReturn = -123.69999694824219
+		 AverageEpisodeLength = 24.700000762939453 
 
-2024-07-04 20:16:14,350 - INFO
+2024-07-11 02:03:28,597 - INFO
 
          Step : 120000
-         Loss : 0.005292833317071199 
-		 NumberOfEpisodes = 12679
+         Loss : 0.4577893614768982 
+		 NumberOfEpisodes = 13095
 		 EnvironmentSteps = 480000
-		 AverageReturn = -136.10000610351562
-		 AverageEpisodeLength = 42.20000076293945 
+		 AverageReturn = -112.30000305175781
+		 AverageEpisodeLength = 28.600000381469727 
 
-2024-07-04 20:23:07,615 - INFO
+2024-07-11 02:14:19,851 - INFO
 
          Step : 130000
-         Loss : 0.012295013293623924 
-		 NumberOfEpisodes = 13390
+         Loss : 0.6581180095672607 
+		 NumberOfEpisodes = 14424
 		 EnvironmentSteps = 520000
-		 AverageReturn = -160.6999969482422
-		 AverageEpisodeLength = 66.80000305175781 
+		 AverageReturn = -139.89999389648438
+		 AverageEpisodeLength = 46.0 
 
-2024-07-04 20:29:54,164 - INFO
+2024-07-11 02:25:17,623 - INFO
 
          Step : 140000
-         Loss : 0.009553804993629456 
-		 NumberOfEpisodes = 14142
+         Loss : 0.4028855562210083 
+		 NumberOfEpisodes = 15579
 		 EnvironmentSteps = 560000
-		 AverageReturn = -138.3000030517578
-		 AverageEpisodeLength = 44.400001525878906 
+		 AverageReturn = -127.5999984741211
+		 AverageEpisodeLength = 43.900001525878906 
 
-2024-07-04 20:36:55,252 - INFO
+2024-07-11 02:36:12,483 - INFO
 
          Step : 150000
-         Loss : 0.014558391645550728 
-		 NumberOfEpisodes = 15172
+         Loss : 1.2437230348587036 
+		 NumberOfEpisodes = 16415
 		 EnvironmentSteps = 600000
-		 AverageReturn = -130.5
-		 AverageEpisodeLength = 36.599998474121094 
+		 AverageReturn = -116.30000305175781
+		 AverageEpisodeLength = 53.0 
 
-2024-07-04 20:43:58,150 - INFO
+2024-07-11 02:47:05,050 - INFO
 
          Step : 160000
-         Loss : 0.01120893843472004 
-		 NumberOfEpisodes = 16377
+         Loss : 1.3886749744415283 
+		 NumberOfEpisodes = 17052
 		 EnvironmentSteps = 640000
-		 AverageReturn = -125.69999694824219
-		 AverageEpisodeLength = 31.799999237060547 
+		 AverageReturn = -136.39999389648438
+		 AverageEpisodeLength = 52.70000076293945 
 
-2024-07-04 20:50:48,177 - INFO
+2024-07-11 02:58:05,574 - INFO
 
          Step : 170000
-         Loss : 0.10724224150180817 
-		 NumberOfEpisodes = 17245
+         Loss : 1.7258179187774658 
+		 NumberOfEpisodes = 17717
 		 EnvironmentSteps = 680000
-		 AverageReturn = -150.8000030517578
-		 AverageEpisodeLength = 62.0 
+		 AverageReturn = -111.5
+		 AverageEpisodeLength = 43.099998474121094 
 
-2024-07-04 20:57:39,944 - INFO
+2024-07-11 03:09:18,677 - INFO
 
          Step : 180000
-         Loss : 0.04394884034991264 
-		 NumberOfEpisodes = 18049
+         Loss : 1.7608129978179932 
+		 NumberOfEpisodes = 18705
 		 EnvironmentSteps = 720000
-		 AverageReturn = -150.89999389648438
-		 AverageEpisodeLength = 57.0 
-
-2024-07-04 21:04:39,822 - INFO
-
-         Step : 190000
-         Loss : 0.1611192673444748 
-		 NumberOfEpisodes = 18648
-		 EnvironmentSteps = 760000
-		 AverageReturn = -140.5
-		 AverageEpisodeLength = 77.19999694824219 
-
-2024-07-04 21:11:29,695 - INFO
-
-         Step : 200000
-         Loss : 1.3942556381225586 
-		 NumberOfEpisodes = 19259
-		 EnvironmentSteps = 800000
-		 AverageReturn = -138.10000610351562
-		 AverageEpisodeLength = 79.9000015258789 
-
-2024-07-04 21:11:29,695 - INFO
-======= Saving training video at step 200000 ======= 
-
-2024-07-04 21:11:30,415 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-04 21:11:30,854 - INFO
-======= Evaluating agent and saving evaluation video at step 200000 ======= 
-
-2024-07-04 21:11:30,870 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-04 21:15:48,155 - INFO
-======= Saving checkpoint at step 200000 ======= 
-
-2024-07-04 21:15:48,938 - INFO
-Saved checkpoint: ./checkpoint\ckpt-200000 
-
-2024-07-04 21:22:40,082 - INFO
-
-         Step : 210000
-         Loss : 2.0516130924224854 
-		 NumberOfEpisodes = 19809
-		 EnvironmentSteps = 840000
-		 AverageReturn = -112.0999984741211
-		 AverageEpisodeLength = 53.900001525878906 
-
-2024-07-04 21:29:39,101 - INFO
-
-         Step : 220000
-         Loss : 1.2615216970443726 
-		 NumberOfEpisodes = 20384
-		 EnvironmentSteps = 880000
-		 AverageReturn = -130.10000610351562
-		 AverageEpisodeLength = 61.70000076293945 
-
-2024-07-04 21:36:40,421 - INFO
-
-         Step : 230000
-         Loss : 2.864201068878174 
-		 NumberOfEpisodes = 20982
-		 EnvironmentSteps = 920000
-		 AverageReturn = -114.5
-		 AverageEpisodeLength = 56.29999923706055 
-
-2024-07-04 21:43:47,353 - INFO
-
-         Step : 240000
-         Loss : 0.9630085229873657 
-		 NumberOfEpisodes = 21819
-		 EnvironmentSteps = 960000
-		 AverageReturn = -110.80000305175781
-		 AverageEpisodeLength = 42.400001525878906 
-
-2024-07-04 21:50:49,330 - INFO
-
-         Step : 250000
-         Loss : 1.122513771057129 
-		 NumberOfEpisodes = 22817
-		 EnvironmentSteps = 1000000
-		 AverageReturn = -98.5
-		 AverageEpisodeLength = 25.0 
-
-2024-07-04 21:57:52,717 - INFO
-
-         Step : 260000
-         Loss : 1.250795841217041 
-		 NumberOfEpisodes = 23882
-		 EnvironmentSteps = 1040000
-		 AverageReturn = -87.69999694824219
-		 AverageEpisodeLength = 29.5 
-
-2024-07-04 22:04:56,330 - INFO
-
-         Step : 270000
-         Loss : 1.8086018562316895 
-		 NumberOfEpisodes = 24823
-		 EnvironmentSteps = 1080000
-		 AverageReturn = -62.0
-		 AverageEpisodeLength = 34.400001525878906 
-
-2024-07-04 22:11:58,442 - INFO
-
-         Step : 280000
-         Loss : 2.7955803871154785 
-		 NumberOfEpisodes = 25624
-		 EnvironmentSteps = 1120000
-		 AverageReturn = -61.099998474121094
-		 AverageEpisodeLength = 59.0 
-
-2024-07-04 22:18:49,664 - INFO
-
-         Step : 290000
-         Loss : 4.361117362976074 
-		 NumberOfEpisodes = 26378
-		 EnvironmentSteps = 1160000
-		 AverageReturn = -37.5
-		 AverageEpisodeLength = 50.70000076293945 
-
-2024-07-04 22:25:50,063 - INFO
-
-         Step : 300000
-         Loss : 4.613045692443848 
-		 NumberOfEpisodes = 27088
-		 EnvironmentSteps = 1200000
-		 AverageReturn = -51.70000076293945
-		 AverageEpisodeLength = 49.599998474121094 
-
-2024-07-04 22:32:43,285 - INFO
-
-         Step : 310000
-         Loss : 2.7832350730895996 
-		 NumberOfEpisodes = 27861
-		 EnvironmentSteps = 1240000
-		 AverageReturn = -16.0
-		 AverageEpisodeLength = 59.79999923706055 
-
-2024-07-04 22:39:47,023 - INFO
-
-         Step : 320000
-         Loss : 4.312514305114746 
-		 NumberOfEpisodes = 28580
-		 EnvironmentSteps = 1280000
-		 AverageReturn = -4.599999904632568
-		 AverageEpisodeLength = 53.5 
-
-2024-07-04 22:46:44,023 - INFO
-
-         Step : 330000
-         Loss : 6.172967910766602 
-		 NumberOfEpisodes = 29264
-		 EnvironmentSteps = 1320000
-		 AverageReturn = 5.800000190734863
-		 AverageEpisodeLength = 53.29999923706055 
-
-2024-07-04 22:53:47,896 - INFO
-
-         Step : 340000
-         Loss : 5.664633750915527 
-		 NumberOfEpisodes = 29941
-		 EnvironmentSteps = 1360000
-		 AverageReturn = -1.2000000476837158
-		 AverageEpisodeLength = 60.29999923706055 
-
-2024-07-04 23:00:42,756 - INFO
-
-         Step : 350000
-         Loss : 3.61319637298584 
-		 NumberOfEpisodes = 30598
-		 EnvironmentSteps = 1400000
-		 AverageReturn = -7.199999809265137
-		 AverageEpisodeLength = 61.20000076293945 
-
-2024-07-04 23:07:42,995 - INFO
-
-         Step : 360000
-         Loss : 3.396162271499634 
-		 NumberOfEpisodes = 31221
-		 EnvironmentSteps = 1440000
-		 AverageReturn = 20.700000762939453
+		 AverageReturn = -111.9000015258789
 		 AverageEpisodeLength = 48.599998474121094 
 
-2024-07-04 23:14:58,029 - INFO
+2024-07-11 03:20:25,449 - INFO
+
+         Step : 190000
+         Loss : 1.96624755859375 
+		 NumberOfEpisodes = 19569
+		 EnvironmentSteps = 760000
+		 AverageReturn = -79.80000305175781
+		 AverageEpisodeLength = 36.900001525878906 
+
+2024-07-11 03:31:51,216 - INFO
+
+         Step : 200000
+         Loss : 2.105889320373535 
+		 NumberOfEpisodes = 20238
+		 EnvironmentSteps = 800000
+		 AverageReturn = -94.5999984741211
+		 AverageEpisodeLength = 46.599998474121094 
+
+2024-07-11 03:31:51,279 - INFO
+======= Saving checkpoint at step 200000 ======= 
+
+2024-07-11 03:31:54,409 - INFO
+Saved checkpoint: ./checkpoint\ckpt-200000 
+
+2024-07-11 03:43:04,147 - INFO
+
+         Step : 210000
+         Loss : 2.4252467155456543 
+		 NumberOfEpisodes = 20942
+		 EnvironmentSteps = 840000
+		 AverageReturn = -85.0
+		 AverageEpisodeLength = 72.69999694824219 
+
+2024-07-11 03:54:18,000 - INFO
+
+         Step : 220000
+         Loss : 3.4043354988098145 
+		 NumberOfEpisodes = 21687
+		 EnvironmentSteps = 880000
+		 AverageReturn = -74.69999694824219
+		 AverageEpisodeLength = 42.0 
+
+2024-07-11 04:05:21,965 - INFO
+
+         Step : 230000
+         Loss : 1.6883420944213867 
+		 NumberOfEpisodes = 22421
+		 EnvironmentSteps = 920000
+		 AverageReturn = -81.69999694824219
+		 AverageEpisodeLength = 43.900001525878906 
+
+2024-07-11 04:16:18,265 - INFO
+
+         Step : 240000
+         Loss : 2.41894268989563 
+		 NumberOfEpisodes = 23236
+		 EnvironmentSteps = 960000
+		 AverageReturn = -68.9000015258789
+		 AverageEpisodeLength = 41.29999923706055 
+
+2024-07-11 04:27:22,474 - INFO
+
+         Step : 250000
+         Loss : 2.3254661560058594 
+		 NumberOfEpisodes = 24021
+		 EnvironmentSteps = 1000000
+		 AverageReturn = -60.20000076293945
+		 AverageEpisodeLength = 47.900001525878906 
+
+2024-07-11 04:27:22,490 - INFO
+======= Saving training video at step 250000 ======= 
+
+2024-07-11 04:27:23,476 - WARNING
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
+
+2024-07-11 04:27:24,336 - INFO
+======= Evaluating agent and saving evaluation video at step 250000 ======= 
+
+2024-07-11 04:27:24,336 - WARNING
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
+
+2024-07-11 04:38:24,187 - INFO
+
+         Step : 260000
+         Loss : 2.7409284114837646 
+		 NumberOfEpisodes = 24832
+		 EnvironmentSteps = 1040000
+		 AverageReturn = -0.6000000238418579
+		 AverageEpisodeLength = 69.9000015258789 
+
+2024-07-11 04:49:20,461 - INFO
+
+         Step : 270000
+         Loss : 3.742563247680664 
+		 NumberOfEpisodes = 25604
+		 EnvironmentSteps = 1080000
+		 AverageReturn = -54.400001525878906
+		 AverageEpisodeLength = 52.29999923706055 
+
+2024-07-11 05:00:34,169 - INFO
+
+         Step : 280000
+         Loss : 3.1458427906036377 
+		 NumberOfEpisodes = 26372
+		 EnvironmentSteps = 1120000
+		 AverageReturn = -83.5999984741211
+		 AverageEpisodeLength = 56.0 
+
+2024-07-11 05:11:35,551 - INFO
+
+         Step : 290000
+         Loss : 2.39902400970459 
+		 NumberOfEpisodes = 27136
+		 EnvironmentSteps = 1160000
+		 AverageReturn = -31.200000762939453
+		 AverageEpisodeLength = 44.400001525878906 
+
+2024-07-11 05:22:32,910 - INFO
+
+         Step : 300000
+         Loss : 6.643781661987305 
+		 NumberOfEpisodes = 27889
+		 EnvironmentSteps = 1200000
+		 AverageReturn = -33.29999923706055
+		 AverageEpisodeLength = 56.70000076293945 
+
+2024-07-11 05:22:32,926 - INFO
+======= Saving checkpoint at step 300000 ======= 
+
+2024-07-11 05:22:34,523 - INFO
+Saved checkpoint: ./checkpoint\ckpt-300000 
+
+2024-07-11 05:33:39,685 - INFO
+
+         Step : 310000
+         Loss : 1.733703374862671 
+		 NumberOfEpisodes = 28652
+		 EnvironmentSteps = 1240000
+		 AverageReturn = -27.399999618530273
+		 AverageEpisodeLength = 55.900001525878906 
+
+2024-07-11 05:44:40,723 - INFO
+
+         Step : 320000
+         Loss : 3.7028298377990723 
+		 NumberOfEpisodes = 29421
+		 EnvironmentSteps = 1280000
+		 AverageReturn = 6.900000095367432
+		 AverageEpisodeLength = 67.5 
+
+2024-07-11 05:55:45,982 - INFO
+
+         Step : 330000
+         Loss : 4.63603401184082 
+		 NumberOfEpisodes = 30175
+		 EnvironmentSteps = 1320000
+		 AverageReturn = -7.400000095367432
+		 AverageEpisodeLength = 56.29999923706055 
+
+2024-07-11 06:07:25,748 - INFO
+
+         Step : 340000
+         Loss : 4.026451110839844 
+		 NumberOfEpisodes = 30901
+		 EnvironmentSteps = 1360000
+		 AverageReturn = -66.69999694824219
+		 AverageEpisodeLength = 34.0 
+
+2024-07-11 06:18:51,654 - INFO
+
+         Step : 350000
+         Loss : 1.7333433628082275 
+		 NumberOfEpisodes = 31624
+		 EnvironmentSteps = 1400000
+		 AverageReturn = -19.600000381469727
+		 AverageEpisodeLength = 48.099998474121094 
+
+2024-07-11 06:30:17,971 - INFO
+
+         Step : 360000
+         Loss : 1.8957122564315796 
+		 NumberOfEpisodes = 32298
+		 EnvironmentSteps = 1440000
+		 AverageReturn = 22.100000381469727
+		 AverageEpisodeLength = 52.29999923706055 
+
+2024-07-11 06:41:40,691 - INFO
 
          Step : 370000
-         Loss : 6.684586524963379 
-		 NumberOfEpisodes = 31825
+         Loss : 1.7076045274734497 
+		 NumberOfEpisodes = 32989
 		 EnvironmentSteps = 1480000
-		 AverageReturn = 110.0
-		 AverageEpisodeLength = 86.80000305175781 
+		 AverageReturn = -31.700000762939453
+		 AverageEpisodeLength = 34.70000076293945 
 
-2024-07-04 23:22:12,598 - INFO
+2024-07-11 06:52:58,624 - INFO
 
          Step : 380000
-         Loss : 2.143561363220215 
-		 NumberOfEpisodes = 32429
+         Loss : 11.644365310668945 
+		 NumberOfEpisodes = 33667
 		 EnvironmentSteps = 1520000
-		 AverageReturn = 76.0999984741211
-		 AverageEpisodeLength = 74.80000305175781 
+		 AverageReturn = 23.799999237060547
+		 AverageEpisodeLength = 60.79999923706055 
 
-2024-07-04 23:29:29,945 - INFO
+2024-07-11 07:04:07,265 - INFO
 
          Step : 390000
-         Loss : 2.5440125465393066 
-		 NumberOfEpisodes = 32995
+         Loss : 1.2764613628387451 
+		 NumberOfEpisodes = 34330
 		 EnvironmentSteps = 1560000
-		 AverageReturn = 95.0999984741211
-		 AverageEpisodeLength = 76.19999694824219 
+		 AverageReturn = 35.5
+		 AverageEpisodeLength = 64.4000015258789 
 
-2024-07-04 23:36:33,384 - INFO
+2024-07-11 07:15:18,115 - INFO
 
          Step : 400000
-         Loss : 1.5113588571548462 
-		 NumberOfEpisodes = 33510
+         Loss : 2.7200253009796143 
+		 NumberOfEpisodes = 34953
 		 EnvironmentSteps = 1600000
-		 AverageReturn = 122.9000015258789
-		 AverageEpisodeLength = 73.9000015258789 
+		 AverageReturn = 41.400001525878906
+		 AverageEpisodeLength = 78.9000015258789 
 
-2024-07-04 23:36:33,399 - INFO
-======= Saving training video at step 400000 ======= 
-
-2024-07-04 23:36:33,415 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-04 23:36:34,591 - INFO
-======= Evaluating agent and saving evaluation video at step 400000 ======= 
-
-2024-07-04 23:36:34,591 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-04 23:36:37,429 - INFO
+2024-07-11 07:15:18,131 - INFO
 ======= Saving checkpoint at step 400000 ======= 
 
-2024-07-04 23:36:38,524 - INFO
+2024-07-11 07:15:19,540 - INFO
 Saved checkpoint: ./checkpoint\ckpt-400000 
 
-2024-07-04 23:43:36,742 - INFO
+2024-07-11 07:26:23,865 - INFO
 
          Step : 410000
-         Loss : 2.59456729888916 
-		 NumberOfEpisodes = 34017
+         Loss : 5.875990867614746 
+		 NumberOfEpisodes = 35527
 		 EnvironmentSteps = 1640000
-		 AverageReturn = 154.0
-		 AverageEpisodeLength = 88.69999694824219 
+		 AverageReturn = -3.4000000953674316
+		 AverageEpisodeLength = 47.20000076293945 
 
-2024-07-04 23:50:31,182 - INFO
+2024-07-11 07:37:28,259 - INFO
 
          Step : 420000
-         Loss : 7.284780502319336 
-		 NumberOfEpisodes = 34484
+         Loss : 1.5717823505401611 
+		 NumberOfEpisodes = 36074
 		 EnvironmentSteps = 1680000
-		 AverageReturn = 199.6999969482422
-		 AverageEpisodeLength = 99.0999984741211 
+		 AverageReturn = 1.899999976158142
+		 AverageEpisodeLength = 62.29999923706055 
 
-2024-07-04 23:57:35,985 - INFO
+2024-07-11 07:48:39,769 - INFO
 
          Step : 430000
-         Loss : 2.06418776512146 
-		 NumberOfEpisodes = 34907
+         Loss : 1.9416706562042236 
+		 NumberOfEpisodes = 36621
 		 EnvironmentSteps = 1720000
-		 AverageReturn = 177.10000610351562
-		 AverageEpisodeLength = 106.4000015258789 
+		 AverageReturn = 38.20000076293945
+		 AverageEpisodeLength = 46.400001525878906 
 
-2024-07-05 00:04:40,896 - INFO
+2024-07-11 07:59:53,531 - INFO
 
          Step : 440000
-         Loss : 1.5914721488952637 
-		 NumberOfEpisodes = 35307
+         Loss : 2.254211664199829 
+		 NumberOfEpisodes = 37135
 		 EnvironmentSteps = 1760000
-		 AverageReturn = 131.60000610351562
-		 AverageEpisodeLength = 75.4000015258789 
+		 AverageReturn = 52.0
+		 AverageEpisodeLength = 68.30000305175781 
 
-2024-07-05 00:11:45,785 - INFO
+2024-07-11 08:11:03,422 - INFO
 
          Step : 450000
-         Loss : 6.555313587188721 
-		 NumberOfEpisodes = 35688
+         Loss : 5.510848522186279 
+		 NumberOfEpisodes = 37628
 		 EnvironmentSteps = 1800000
-		 AverageReturn = 264.20001220703125
-		 AverageEpisodeLength = 131.5 
+		 AverageReturn = 2.5
+		 AverageEpisodeLength = 46.400001525878906 
 
-2024-07-05 00:18:45,889 - INFO
+2024-07-11 08:22:34,045 - INFO
 
          Step : 460000
-         Loss : 6.794758319854736 
-		 NumberOfEpisodes = 36028
+         Loss : 2.0328521728515625 
+		 NumberOfEpisodes = 38106
 		 EnvironmentSteps = 1840000
-		 AverageReturn = 161.10000610351562
-		 AverageEpisodeLength = 86.69999694824219 
+		 AverageReturn = 137.0
+		 AverageEpisodeLength = 85.30000305175781 
 
-2024-07-05 00:25:52,638 - INFO
+2024-07-11 08:33:57,877 - INFO
 
          Step : 470000
-         Loss : 4.005449295043945 
-		 NumberOfEpisodes = 36324
+         Loss : 4.687966346740723 
+		 NumberOfEpisodes = 38536
 		 EnvironmentSteps = 1880000
-		 AverageReturn = 419.6000061035156
-		 AverageEpisodeLength = 169.89999389648438 
+		 AverageReturn = 98.5
+		 AverageEpisodeLength = 93.19999694824219 
 
-2024-07-05 00:33:08,641 - INFO
+2024-07-11 08:45:14,233 - INFO
 
          Step : 480000
-         Loss : 3.2772626876831055 
-		 NumberOfEpisodes = 36598
+         Loss : 15.372350692749023 
+		 NumberOfEpisodes = 38947
 		 EnvironmentSteps = 1920000
-		 AverageReturn = 473.6000061035156
-		 AverageEpisodeLength = 202.60000610351562 
+		 AverageReturn = 209.10000610351562
+		 AverageEpisodeLength = 115.19999694824219 
 
-2024-07-05 00:40:13,467 - INFO
+2024-07-11 08:56:34,820 - INFO
 
          Step : 490000
-         Loss : 1.99017333984375 
-		 NumberOfEpisodes = 36840
+         Loss : 8.708072662353516 
+		 NumberOfEpisodes = 39297
 		 EnvironmentSteps = 1960000
-		 AverageReturn = 486.79998779296875
-		 AverageEpisodeLength = 204.6999969482422 
+		 AverageReturn = 243.89999389648438
+		 AverageEpisodeLength = 136.5 
 
-2024-07-05 00:47:14,420 - INFO
+2024-07-11 09:07:43,537 - INFO
 
          Step : 500000
-         Loss : 7.4906439781188965 
-		 NumberOfEpisodes = 37042
+         Loss : 2.511505603790283 
+		 NumberOfEpisodes = 39649
 		 EnvironmentSteps = 2000000
-		 AverageReturn = 495.0
-		 AverageEpisodeLength = 186.3000030517578 
+		 AverageReturn = 212.60000610351562
+		 AverageEpisodeLength = 101.5 
 
-2024-07-05 00:54:21,558 - INFO
+2024-07-11 09:07:43,553 - INFO
+======= Saving training video at step 500000 ======= 
 
-         Step : 510000
-         Loss : 2.8686418533325195 
-		 NumberOfEpisodes = 37244
-		 EnvironmentSteps = 2040000
-		 AverageReturn = 638.7000122070312
-		 AverageEpisodeLength = 251.6999969482422 
-
-2024-07-05 01:01:28,058 - INFO
-
-         Step : 520000
-         Loss : 11.222640991210938 
-		 NumberOfEpisodes = 37428
-		 EnvironmentSteps = 2080000
-		 AverageReturn = 601.0
-		 AverageEpisodeLength = 218.0 
-
-2024-07-05 01:08:34,974 - INFO
-
-         Step : 530000
-         Loss : 4.00384521484375 
-		 NumberOfEpisodes = 37615
-		 EnvironmentSteps = 2120000
-		 AverageReturn = 593.4000244140625
-		 AverageEpisodeLength = 215.39999389648438 
-
-2024-07-05 01:15:40,720 - INFO
-
-         Step : 540000
-         Loss : 1.4767578840255737 
-		 NumberOfEpisodes = 37803
-		 EnvironmentSteps = 2160000
-		 AverageReturn = 487.5
-		 AverageEpisodeLength = 209.10000610351562 
-
-2024-07-05 01:22:50,680 - INFO
-
-         Step : 550000
-         Loss : 1.367344856262207 
-		 NumberOfEpisodes = 37991
-		 EnvironmentSteps = 2200000
-		 AverageReturn = 433.0
-		 AverageEpisodeLength = 171.8000030517578 
-
-2024-07-05 01:30:01,858 - INFO
-
-         Step : 560000
-         Loss : 2.6488606929779053 
-		 NumberOfEpisodes = 38164
-		 EnvironmentSteps = 2240000
-		 AverageReturn = 614.9000244140625
-		 AverageEpisodeLength = 239.8000030517578 
-
-2024-07-05 01:37:14,277 - INFO
-
-         Step : 570000
-         Loss : 2.838944911956787 
-		 NumberOfEpisodes = 38341
-		 EnvironmentSteps = 2280000
-		 AverageReturn = 564.5999755859375
-		 AverageEpisodeLength = 228.89999389648438 
-
-2024-07-05 01:44:20,281 - INFO
-
-         Step : 580000
-         Loss : 1.7386200428009033 
-		 NumberOfEpisodes = 38506
-		 EnvironmentSteps = 2320000
-		 AverageReturn = 616.7999877929688
-		 AverageEpisodeLength = 237.89999389648438 
-
-2024-07-05 01:51:28,075 - INFO
-
-         Step : 590000
-         Loss : 8.094779968261719 
-		 NumberOfEpisodes = 38669
-		 EnvironmentSteps = 2360000
-		 AverageReturn = 642.7000122070312
-		 AverageEpisodeLength = 242.60000610351562 
-
-2024-07-05 01:58:36,882 - INFO
-
-         Step : 600000
-         Loss : 2.666370153427124 
-		 NumberOfEpisodes = 38814
-		 EnvironmentSteps = 2400000
-		 AverageReturn = 799.0999755859375
-		 AverageEpisodeLength = 325.8999938964844 
-
-2024-07-05 01:58:36,898 - INFO
-======= Saving training video at step 600000 ======= 
-
-2024-07-05 01:58:36,961 - WARNING
+2024-07-11 09:07:43,569 - WARNING
 IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
 
-2024-07-05 01:58:38,120 - INFO
-======= Evaluating agent and saving evaluation video at step 600000 ======= 
+2024-07-11 09:07:44,275 - INFO
+======= Evaluating agent and saving evaluation video at step 500000 ======= 
 
-2024-07-05 01:58:38,182 - WARNING
+2024-07-11 09:07:44,290 - WARNING
 IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
 
-2024-07-05 01:58:51,800 - INFO
-======= Saving checkpoint at step 600000 ======= 
+2024-07-11 09:07:50,296 - INFO
+======= Saving checkpoint at step 500000 ======= 
 
-2024-07-05 01:58:53,350 - INFO
-Saved checkpoint: ./checkpoint\ckpt-600000 
+2024-07-11 09:07:51,032 - INFO
+Saved checkpoint: ./checkpoint\ckpt-500000 
 
-2024-07-05 02:05:56,282 - INFO
+2024-07-11 09:07:53,728 - INFO
+======= A segment completed at step 500000 ======= 
 
-         Step : 610000
-         Loss : 4.279932022094727 
-		 NumberOfEpisodes = 38949
-		 EnvironmentSteps = 2440000
-		 AverageReturn = 764.2999877929688
-		 AverageEpisodeLength = 314.79998779296875 
-
-2024-07-05 02:13:03,630 - INFO
-
-         Step : 620000
-         Loss : 5.215753555297852 
-		 NumberOfEpisodes = 39082
-		 EnvironmentSteps = 2480000
-		 AverageReturn = 630.5999755859375
-		 AverageEpisodeLength = 275.1000061035156 
-
-2024-07-05 02:20:00,932 - INFO
-
-         Step : 630000
-         Loss : 2.927537441253662 
-		 NumberOfEpisodes = 39205
-		 EnvironmentSteps = 2520000
-		 AverageReturn = 723.4000244140625
-		 AverageEpisodeLength = 299.6000061035156 
-
-2024-07-05 02:27:06,730 - INFO
-
-         Step : 640000
-         Loss : 4.38699197769165 
-		 NumberOfEpisodes = 39328
-		 EnvironmentSteps = 2560000
-		 AverageReturn = 602.5999755859375
-		 AverageEpisodeLength = 231.6999969482422 
-
-2024-07-05 02:34:10,710 - INFO
-
-         Step : 650000
-         Loss : 3.3753650188446045 
-		 NumberOfEpisodes = 39456
-		 EnvironmentSteps = 2600000
-		 AverageReturn = 677.2000122070312
-		 AverageEpisodeLength = 310.1000061035156 
-
-2024-07-05 02:41:16,827 - INFO
-
-         Step : 660000
-         Loss : 4.328485488891602 
-		 NumberOfEpisodes = 39563
-		 EnvironmentSteps = 2640000
-		 AverageReturn = 747.0
-		 AverageEpisodeLength = 332.1000061035156 
-
-2024-07-05 02:48:27,613 - INFO
-
-         Step : 670000
-         Loss : 3.1907219886779785 
-		 NumberOfEpisodes = 39686
-		 EnvironmentSteps = 2680000
-		 AverageReturn = 930.4000244140625
-		 AverageEpisodeLength = 403.70001220703125 
-
-2024-07-05 02:55:41,485 - INFO
-
-         Step : 680000
-         Loss : 4.530518531799316 
-		 NumberOfEpisodes = 39799
-		 EnvironmentSteps = 2720000
-		 AverageReturn = 599.7999877929688
-		 AverageEpisodeLength = 244.6999969482422 
-
-2024-07-05 03:02:50,274 - INFO
-
-         Step : 690000
-         Loss : 3.7603323459625244 
-		 NumberOfEpisodes = 39917
-		 EnvironmentSteps = 2760000
-		 AverageReturn = 891.9000244140625
-		 AverageEpisodeLength = 401.3999938964844 
-
-2024-07-05 03:10:05,653 - INFO
-
-         Step : 700000
-         Loss : 3.8928136825561523 
-		 NumberOfEpisodes = 40053
-		 EnvironmentSteps = 2800000
-		 AverageReturn = 280.29998779296875
-		 AverageEpisodeLength = 120.5 
-
-2024-07-05 03:17:15,362 - INFO
-
-         Step : 710000
-         Loss : 3.9071855545043945 
-		 NumberOfEpisodes = 40179
-		 EnvironmentSteps = 2840000
-		 AverageReturn = 727.5999755859375
-		 AverageEpisodeLength = 269.8999938964844 
-
-2024-07-05 03:24:32,423 - INFO
-
-         Step : 720000
-         Loss : 4.459000587463379 
-		 NumberOfEpisodes = 40292
-		 EnvironmentSteps = 2880000
-		 AverageReturn = 622.0
-		 AverageEpisodeLength = 248.0 
-
-2024-07-05 03:31:51,322 - INFO
-
-         Step : 730000
-         Loss : 4.218592643737793 
-		 NumberOfEpisodes = 40443
-		 EnvironmentSteps = 2920000
-		 AverageReturn = 591.4000244140625
-		 AverageEpisodeLength = 232.6999969482422 
-
-2024-07-05 03:39:06,723 - INFO
-
-         Step : 740000
-         Loss : 3.033881187438965 
-		 NumberOfEpisodes = 40575
-		 EnvironmentSteps = 2960000
-		 AverageReturn = 859.0999755859375
-		 AverageEpisodeLength = 408.70001220703125 
-
-2024-07-05 03:46:28,579 - INFO
-
-         Step : 750000
-         Loss : 4.567264080047607 
-		 NumberOfEpisodes = 40694
-		 EnvironmentSteps = 3000000
-		 AverageReturn = 549.4000244140625
-		 AverageEpisodeLength = 244.10000610351562 
-
-2024-07-05 03:53:39,006 - INFO
-
-         Step : 760000
-         Loss : 4.074251174926758 
-		 NumberOfEpisodes = 40817
-		 EnvironmentSteps = 3040000
-		 AverageReturn = 641.4000244140625
-		 AverageEpisodeLength = 274.5 
-
-2024-07-05 04:00:55,411 - INFO
-
-         Step : 770000
-         Loss : 2.4848833084106445 
-		 NumberOfEpisodes = 40944
-		 EnvironmentSteps = 3080000
-		 AverageReturn = 651.7000122070312
-		 AverageEpisodeLength = 294.79998779296875 
-
-2024-07-05 04:08:02,861 - INFO
-
-         Step : 780000
-         Loss : 2.4131717681884766 
-		 NumberOfEpisodes = 41083
-		 EnvironmentSteps = 3120000
-		 AverageReturn = 595.4000244140625
-		 AverageEpisodeLength = 279.70001220703125 
-
-2024-07-05 04:15:16,670 - INFO
-
-         Step : 790000
-         Loss : 5.358182907104492 
-		 NumberOfEpisodes = 41215
-		 EnvironmentSteps = 3160000
-		 AverageReturn = 796.0999755859375
-		 AverageEpisodeLength = 354.3999938964844 
-
-2024-07-05 04:22:25,695 - INFO
-
-         Step : 800000
-         Loss : 2.737051010131836 
-		 NumberOfEpisodes = 41369
-		 EnvironmentSteps = 3200000
-		 AverageReturn = 834.2999877929688
-		 AverageEpisodeLength = 321.29998779296875 
-
-2024-07-05 04:22:25,711 - INFO
-======= Saving training video at step 800000 ======= 
-
-2024-07-05 04:22:25,727 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 04:22:26,860 - INFO
-======= Evaluating agent and saving evaluation video at step 800000 ======= 
-
-2024-07-05 04:22:26,876 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 04:24:50,069 - INFO
-======= Saving checkpoint at step 800000 ======= 
-
-2024-07-05 04:24:51,167 - INFO
-Saved checkpoint: ./checkpoint\ckpt-800000 
-
-2024-07-05 04:32:03,207 - INFO
-
-         Step : 810000
-         Loss : 5.770720958709717 
-		 NumberOfEpisodes = 41510
-		 EnvironmentSteps = 3240000
-		 AverageReturn = 575.5
-		 AverageEpisodeLength = 228.1999969482422 
-
-2024-07-05 04:39:13,152 - INFO
-
-         Step : 820000
-         Loss : 3.9794318675994873 
-		 NumberOfEpisodes = 41646
-		 EnvironmentSteps = 3280000
-		 AverageReturn = 402.5
-		 AverageEpisodeLength = 166.60000610351562 
-
-2024-07-05 04:46:30,602 - INFO
-
-         Step : 830000
-         Loss : 1.8157235383987427 
-		 NumberOfEpisodes = 41773
-		 EnvironmentSteps = 3320000
-		 AverageReturn = 587.0
-		 AverageEpisodeLength = 237.10000610351562 
-
-2024-07-05 04:53:35,456 - INFO
-
-         Step : 840000
-         Loss : 2.0133495330810547 
-		 NumberOfEpisodes = 41907
-		 EnvironmentSteps = 3360000
-		 AverageReturn = 616.0
-		 AverageEpisodeLength = 248.89999389648438 
-
-2024-07-05 05:00:48,108 - INFO
-
-         Step : 850000
-         Loss : 3.275085687637329 
-		 NumberOfEpisodes = 42041
-		 EnvironmentSteps = 3400000
-		 AverageReturn = 828.2000122070312
-		 AverageEpisodeLength = 342.70001220703125 
-
-2024-07-05 05:07:51,616 - INFO
-
-         Step : 860000
-         Loss : 3.8910627365112305 
-		 NumberOfEpisodes = 42152
-		 EnvironmentSteps = 3440000
-		 AverageReturn = 635.5999755859375
-		 AverageEpisodeLength = 285.3999938964844 
-
-2024-07-05 05:15:02,195 - INFO
-
-         Step : 870000
-         Loss : 6.559713363647461 
-		 NumberOfEpisodes = 42272
-		 EnvironmentSteps = 3480000
-		 AverageReturn = 760.0999755859375
-		 AverageEpisodeLength = 288.3999938964844 
-
-2024-07-05 05:22:08,150 - INFO
-
-         Step : 880000
-         Loss : 4.3451128005981445 
-		 NumberOfEpisodes = 42395
-		 EnvironmentSteps = 3520000
-		 AverageReturn = 859.7999877929688
-		 AverageEpisodeLength = 377.3999938964844 
-
-2024-07-05 05:29:10,430 - INFO
-
-         Step : 890000
-         Loss : 3.6438119411468506 
-		 NumberOfEpisodes = 42527
-		 EnvironmentSteps = 3560000
-		 AverageReturn = 711.2000122070312
-		 AverageEpisodeLength = 316.8999938964844 
-
-2024-07-05 05:36:19,527 - INFO
-
-         Step : 900000
-         Loss : 3.127347707748413 
-		 NumberOfEpisodes = 42644
-		 EnvironmentSteps = 3600000
-		 AverageReturn = 696.2000122070312
-		 AverageEpisodeLength = 286.0 
-
-2024-07-05 05:43:28,098 - INFO
-
-         Step : 910000
-         Loss : 2.930781602859497 
-		 NumberOfEpisodes = 42785
-		 EnvironmentSteps = 3640000
-		 AverageReturn = 976.0
-		 AverageEpisodeLength = 393.79998779296875 
-
-2024-07-05 05:50:44,100 - INFO
-
-         Step : 920000
-         Loss : 2.9594860076904297 
-		 NumberOfEpisodes = 42907
-		 EnvironmentSteps = 3680000
-		 AverageReturn = 955.2000122070312
-		 AverageEpisodeLength = 368.70001220703125 
-
-2024-07-05 05:57:58,787 - INFO
-
-         Step : 930000
-         Loss : 2.879777193069458 
-		 NumberOfEpisodes = 43034
-		 EnvironmentSteps = 3720000
-		 AverageReturn = 728.9000244140625
-		 AverageEpisodeLength = 314.5 
-
-2024-07-05 06:05:16,768 - INFO
-
-         Step : 940000
-         Loss : 2.7364587783813477 
-		 NumberOfEpisodes = 43168
-		 EnvironmentSteps = 3760000
-		 AverageReturn = 712.2999877929688
-		 AverageEpisodeLength = 290.29998779296875 
-
-2024-07-05 06:12:26,741 - INFO
-
-         Step : 950000
-         Loss : 14.584405899047852 
-		 NumberOfEpisodes = 43310
-		 EnvironmentSteps = 3800000
-		 AverageReturn = 853.2000122070312
-		 AverageEpisodeLength = 338.1000061035156 
-
-2024-07-05 06:19:44,157 - INFO
-
-         Step : 960000
-         Loss : 3.0826621055603027 
-		 NumberOfEpisodes = 43446
-		 EnvironmentSteps = 3840000
-		 AverageReturn = 654.0
-		 AverageEpisodeLength = 282.29998779296875 
-
-2024-07-05 06:27:02,814 - INFO
-
-         Step : 970000
-         Loss : 2.7347640991210938 
-		 NumberOfEpisodes = 43570
-		 EnvironmentSteps = 3880000
-		 AverageReturn = 1063.9000244140625
-		 AverageEpisodeLength = 469.1000061035156 
-
-2024-07-05 06:34:18,731 - INFO
-
-         Step : 980000
-         Loss : 4.240536689758301 
-		 NumberOfEpisodes = 43693
-		 EnvironmentSteps = 3920000
-		 AverageReturn = 921.0999755859375
-		 AverageEpisodeLength = 382.3999938964844 
-
-2024-07-05 06:41:32,051 - INFO
-
-         Step : 990000
-         Loss : 3.1868178844451904 
-		 NumberOfEpisodes = 43839
-		 EnvironmentSteps = 3960000
-		 AverageReturn = 898.2000122070312
-		 AverageEpisodeLength = 339.0 
-
-2024-07-05 06:48:47,613 - INFO
-
-         Step : 1000000
-         Loss : 1.890822410583496 
-		 NumberOfEpisodes = 43967
-		 EnvironmentSteps = 4000000
-		 AverageReturn = 674.0999755859375
-		 AverageEpisodeLength = 272.3999938964844 
-
-2024-07-05 06:48:47,629 - INFO
-======= Saving training video at step 1000000 ======= 
-
-2024-07-05 06:48:47,644 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 06:48:48,838 - INFO
-======= Evaluating agent and saving evaluation video at step 1000000 ======= 
-
-2024-07-05 06:48:48,854 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 06:49:06,787 - INFO
-======= Saving checkpoint at step 1000000 ======= 
-
-2024-07-05 06:49:08,057 - INFO
-Saved checkpoint: ./checkpoint\ckpt-1000000 
-
-2024-07-05 06:49:14,031 - INFO
-======= A segment completed at step 1000000 ======= 
-
-2024-07-05 06:49:14,031 - INFO
-========================================================== Finished 1000000 Training iteration in: 11:55:14.730989. Total training steps: 1000000 ========================================================== 
-
-2024-07-05 18:47:52,115 - WARNING
-From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
- 
-
-2024-07-05 18:48:14,598 - WARNING
-From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\tensorflow\python\autograph\impl\api.py:377: ReplayBuffer.get_next (from tf_agents.replay_buffers.replay_buffer) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use `as_dataset(..., single_deterministic_pass=False) instead. 
-
-2024-07-05 18:48:16,278 - INFO
-Checkpoint available: ./checkpoint\ckpt-1000000 
-
-2024-07-05 18:48:16,828 - INFO
-Restored training from last checkpoint at step 1000000 
-
-2024-07-05 18:49:00,975 - WARNING
-From C:\Users\iitka\.conda\envs\snake-mania\lib\site-packages\tensorflow\python\util\dispatch.py:1260: calling foldr_v2 (from tensorflow.python.ops.functional_ops) with back_prop=False is deprecated and will be removed in a future version.
-Instructions for updating:
-back_prop=False is deprecated. Consider using tf.stop_gradient instead.
-Instead of:
-results = tf.foldr(fn, elems, back_prop=False)
-Use:
-results = tf.nest.map_structure(tf.stop_gradient, tf.foldr(fn, elems)) 
-
-2024-07-05 18:55:18,931 - INFO
-
-         Step : 1010000
-         Loss : 7.472903251647949 
-		 NumberOfEpisodes = 44096
-		 EnvironmentSteps = 4040000
-		 AverageReturn = 753.4000244140625
-		 AverageEpisodeLength = 330.79998779296875 
-
-2024-07-05 19:01:33,114 - INFO
-
-         Step : 1020000
-         Loss : 1.8961410522460938 
-		 NumberOfEpisodes = 44227
-		 EnvironmentSteps = 4080000
-		 AverageReturn = 827.0999755859375
-		 AverageEpisodeLength = 333.6000061035156 
-
-2024-07-05 19:07:45,597 - INFO
-
-         Step : 1030000
-         Loss : 8.590743064880371 
-		 NumberOfEpisodes = 44358
-		 EnvironmentSteps = 4120000
-		 AverageReturn = 852.2000122070312
-		 AverageEpisodeLength = 323.79998779296875 
-
-2024-07-05 19:14:04,774 - INFO
-
-         Step : 1040000
-         Loss : 5.239733695983887 
-		 NumberOfEpisodes = 44477
-		 EnvironmentSteps = 4160000
-		 AverageReturn = 676.7000122070312
-		 AverageEpisodeLength = 264.70001220703125 
-
-2024-07-05 19:20:40,887 - INFO
-
-         Step : 1050000
-         Loss : 5.620943069458008 
-		 NumberOfEpisodes = 44617
-		 EnvironmentSteps = 4200000
-		 AverageReturn = 673.7999877929688
-		 AverageEpisodeLength = 252.3000030517578 
-
-2024-07-05 19:27:35,316 - INFO
-
-         Step : 1060000
-         Loss : 3.2183432579040527 
-		 NumberOfEpisodes = 44745
-		 EnvironmentSteps = 4240000
-		 AverageReturn = 496.5
-		 AverageEpisodeLength = 240.89999389648438 
-
-2024-07-05 19:34:22,595 - INFO
-
-         Step : 1070000
-         Loss : 3.3424906730651855 
-		 NumberOfEpisodes = 44872
-		 EnvironmentSteps = 4280000
-		 AverageReturn = 847.5999755859375
-		 AverageEpisodeLength = 323.29998779296875 
-
-2024-07-05 19:41:18,308 - INFO
-
-         Step : 1080000
-         Loss : 3.7664172649383545 
-		 NumberOfEpisodes = 44993
-		 EnvironmentSteps = 4320000
-		 AverageReturn = 692.4000244140625
-		 AverageEpisodeLength = 294.8999938964844 
-
-2024-07-05 19:48:19,451 - INFO
-
-         Step : 1090000
-         Loss : 2.2254772186279297 
-		 NumberOfEpisodes = 45116
-		 EnvironmentSteps = 4360000
-		 AverageReturn = 443.29998779296875
-		 AverageEpisodeLength = 202.3000030517578 
-
-2024-07-05 19:55:17,599 - INFO
-
-         Step : 1100000
-         Loss : 2.1238346099853516 
-		 NumberOfEpisodes = 45242
-		 EnvironmentSteps = 4400000
-		 AverageReturn = 958.0
-		 AverageEpisodeLength = 411.79998779296875 
-
-2024-07-05 20:02:17,447 - INFO
-
-         Step : 1110000
-         Loss : 2.776984691619873 
-		 NumberOfEpisodes = 45361
-		 EnvironmentSteps = 4440000
-		 AverageReturn = 1030.199951171875
-		 AverageEpisodeLength = 451.79998779296875 
-
-2024-07-05 20:09:20,146 - INFO
-
-         Step : 1120000
-         Loss : 12.390290260314941 
-		 NumberOfEpisodes = 45483
-		 EnvironmentSteps = 4480000
-		 AverageReturn = 732.0999755859375
-		 AverageEpisodeLength = 290.8999938964844 
-
-2024-07-05 20:16:33,636 - INFO
-
-         Step : 1130000
-         Loss : 1.4424973726272583 
-		 NumberOfEpisodes = 45610
-		 EnvironmentSteps = 4520000
-		 AverageReturn = 927.7000122070312
-		 AverageEpisodeLength = 365.6000061035156 
-
-2024-07-05 20:23:44,918 - INFO
-
-         Step : 1140000
-         Loss : 8.706255912780762 
-		 NumberOfEpisodes = 45740
-		 EnvironmentSteps = 4560000
-		 AverageReturn = 751.5999755859375
-		 AverageEpisodeLength = 296.8999938964844 
-
-2024-07-05 20:31:08,843 - INFO
-
-         Step : 1150000
-         Loss : 3.7934837341308594 
-		 NumberOfEpisodes = 45862
-		 EnvironmentSteps = 4600000
-		 AverageReturn = 1066.4000244140625
-		 AverageEpisodeLength = 471.70001220703125 
-
-2024-07-05 20:38:29,540 - INFO
-
-         Step : 1160000
-         Loss : 1.8605048656463623 
-		 NumberOfEpisodes = 45987
-		 EnvironmentSteps = 4640000
-		 AverageReturn = 707.5999755859375
-		 AverageEpisodeLength = 269.5 
-
-2024-07-05 20:46:00,302 - INFO
-
-         Step : 1170000
-         Loss : 5.2382965087890625 
-		 NumberOfEpisodes = 46111
-		 EnvironmentSteps = 4680000
-		 AverageReturn = 1384.4000244140625
-		 AverageEpisodeLength = 561.7000122070312 
-
-2024-07-05 20:53:30,365 - INFO
-
-         Step : 1180000
-         Loss : 3.020355224609375 
-		 NumberOfEpisodes = 46239
-		 EnvironmentSteps = 4720000
-		 AverageReturn = 791.0999755859375
-		 AverageEpisodeLength = 303.29998779296875 
-
-2024-07-05 21:01:00,982 - INFO
-
-         Step : 1190000
-         Loss : 3.2564430236816406 
-		 NumberOfEpisodes = 46349
-		 EnvironmentSteps = 4760000
-		 AverageReturn = 981.5999755859375
-		 AverageEpisodeLength = 367.79998779296875 
-
-2024-07-05 21:08:30,715 - INFO
-
-         Step : 1200000
-         Loss : 4.203214645385742 
-		 NumberOfEpisodes = 46461
-		 EnvironmentSteps = 4800000
-		 AverageReturn = 860.0
-		 AverageEpisodeLength = 351.70001220703125 
-
-2024-07-05 21:08:30,825 - INFO
-======= Saving training video at step 1200000 ======= 
-
-2024-07-05 21:08:31,202 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 21:08:31,753 - INFO
-======= Evaluating agent and saving evaluation video at step 1200000 ======= 
-
-2024-07-05 21:08:31,784 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 21:08:44,280 - INFO
-======= Saving checkpoint at step 1200000 ======= 
-
-2024-07-05 21:08:45,129 - INFO
-Saved checkpoint: ./checkpoint\ckpt-1200000 
-
-2024-07-05 21:16:18,884 - INFO
-
-         Step : 1210000
-         Loss : 3.026862144470215 
-		 NumberOfEpisodes = 46583
-		 EnvironmentSteps = 4840000
-		 AverageReturn = 735.5999755859375
-		 AverageEpisodeLength = 292.5 
-
-2024-07-05 21:23:45,533 - INFO
-
-         Step : 1220000
-         Loss : 3.0117173194885254 
-		 NumberOfEpisodes = 46693
-		 EnvironmentSteps = 4880000
-		 AverageReturn = 704.5
-		 AverageEpisodeLength = 282.79998779296875 
-
-2024-07-05 21:31:11,873 - INFO
-
-         Step : 1230000
-         Loss : 2.151024341583252 
-		 NumberOfEpisodes = 46810
-		 EnvironmentSteps = 4920000
-		 AverageReturn = 641.2999877929688
-		 AverageEpisodeLength = 249.10000610351562 
-
-2024-07-05 21:38:35,338 - INFO
-
-         Step : 1240000
-         Loss : 2.4935123920440674 
-		 NumberOfEpisodes = 46930
-		 EnvironmentSteps = 4960000
-		 AverageReturn = 917.2000122070312
-		 AverageEpisodeLength = 355.70001220703125 
-
-2024-07-05 21:45:59,787 - INFO
-
-         Step : 1250000
-         Loss : 3.1081924438476562 
-		 NumberOfEpisodes = 47045
-		 EnvironmentSteps = 5000000
-		 AverageReturn = 998.9000244140625
-		 AverageEpisodeLength = 416.79998779296875 
-
-2024-07-05 21:53:13,162 - INFO
-
-         Step : 1260000
-         Loss : 2.3134703636169434 
-		 NumberOfEpisodes = 47151
-		 EnvironmentSteps = 5040000
-		 AverageReturn = 869.9000244140625
-		 AverageEpisodeLength = 372.3999938964844 
-
-2024-07-05 22:00:24,023 - INFO
-
-         Step : 1270000
-         Loss : 2.3133671283721924 
-		 NumberOfEpisodes = 47265
-		 EnvironmentSteps = 5080000
-		 AverageReturn = 686.0
-		 AverageEpisodeLength = 265.6000061035156 
-
-2024-07-05 22:07:49,613 - INFO
-
-         Step : 1280000
-         Loss : 5.466520309448242 
-		 NumberOfEpisodes = 47384
-		 EnvironmentSteps = 5120000
-		 AverageReturn = 842.9000244140625
-		 AverageEpisodeLength = 333.1000061035156 
-
-2024-07-05 22:14:56,113 - INFO
-
-         Step : 1290000
-         Loss : 4.682783603668213 
-		 NumberOfEpisodes = 47510
-		 EnvironmentSteps = 5160000
-		 AverageReturn = 828.0
-		 AverageEpisodeLength = 337.79998779296875 
-
-2024-07-05 22:22:10,145 - INFO
-
-         Step : 1300000
-         Loss : 3.372095823287964 
-		 NumberOfEpisodes = 47631
-		 EnvironmentSteps = 5200000
-		 AverageReturn = 907.7999877929688
-		 AverageEpisodeLength = 370.20001220703125 
-
-2024-07-05 22:29:19,987 - INFO
-
-         Step : 1310000
-         Loss : 1.2911174297332764 
-		 NumberOfEpisodes = 47753
-		 EnvironmentSteps = 5240000
-		 AverageReturn = 882.5
-		 AverageEpisodeLength = 364.8999938964844 
-
-2024-07-05 22:36:35,221 - INFO
-
-         Step : 1320000
-         Loss : 2.0552890300750732 
-		 NumberOfEpisodes = 47865
-		 EnvironmentSteps = 5280000
-		 AverageReturn = 904.2999877929688
-		 AverageEpisodeLength = 383.8999938964844 
-
-2024-07-05 22:43:47,053 - INFO
-
-         Step : 1330000
-         Loss : 2.2667407989501953 
-		 NumberOfEpisodes = 47985
-		 EnvironmentSteps = 5320000
-		 AverageReturn = 728.7999877929688
-		 AverageEpisodeLength = 273.79998779296875 
-
-2024-07-05 22:51:01,846 - INFO
-
-         Step : 1340000
-         Loss : 2.084867000579834 
-		 NumberOfEpisodes = 48112
-		 EnvironmentSteps = 5360000
-		 AverageReturn = 909.9000244140625
-		 AverageEpisodeLength = 352.79998779296875 
-
-2024-07-05 22:58:12,036 - INFO
-
-         Step : 1350000
-         Loss : 3.4201624393463135 
-		 NumberOfEpisodes = 48229
-		 EnvironmentSteps = 5400000
-		 AverageReturn = 953.9000244140625
-		 AverageEpisodeLength = 344.5 
-
-2024-07-05 23:05:20,714 - INFO
-
-         Step : 1360000
-         Loss : 2.7427926063537598 
-		 NumberOfEpisodes = 48347
-		 EnvironmentSteps = 5440000
-		 AverageReturn = 564.7999877929688
-		 AverageEpisodeLength = 238.89999389648438 
-
-2024-07-05 23:12:35,455 - INFO
-
-         Step : 1370000
-         Loss : 1.7454707622528076 
-		 NumberOfEpisodes = 48472
-		 EnvironmentSteps = 5480000
-		 AverageReturn = 685.0
-		 AverageEpisodeLength = 276.79998779296875 
-
-2024-07-05 23:19:51,063 - INFO
-
-         Step : 1380000
-         Loss : 14.752845764160156 
-		 NumberOfEpisodes = 48613
-		 EnvironmentSteps = 5520000
-		 AverageReturn = 652.5
-		 AverageEpisodeLength = 268.5 
-
-2024-07-05 23:27:14,703 - INFO
-
-         Step : 1390000
-         Loss : 3.6379668712615967 
-		 NumberOfEpisodes = 48738
-		 EnvironmentSteps = 5560000
-		 AverageReturn = 509.6000061035156
-		 AverageEpisodeLength = 217.60000610351562 
-
-2024-07-05 23:34:41,642 - INFO
-
-         Step : 1400000
-         Loss : 3.872073173522949 
-		 NumberOfEpisodes = 48872
-		 EnvironmentSteps = 5600000
-		 AverageReturn = 797.0
-		 AverageEpisodeLength = 307.6000061035156 
-
-2024-07-05 23:34:41,689 - INFO
-======= Saving training video at step 1400000 ======= 
-
-2024-07-05 23:34:41,689 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 23:34:42,240 - INFO
-======= Evaluating agent and saving evaluation video at step 1400000 ======= 
-
-2024-07-05 23:34:42,256 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-05 23:34:50,871 - INFO
-======= Saving checkpoint at step 1400000 ======= 
-
-2024-07-05 23:34:51,734 - INFO
-Saved checkpoint: ./checkpoint\ckpt-1400000 
-
-2024-07-05 23:42:22,023 - INFO
-
-         Step : 1410000
-         Loss : 3.8699560165405273 
-		 NumberOfEpisodes = 48996
-		 EnvironmentSteps = 5640000
-		 AverageReturn = 980.0999755859375
-		 AverageEpisodeLength = 399.8999938964844 
-
-2024-07-05 23:49:35,546 - INFO
-
-         Step : 1420000
-         Loss : 8.256855964660645 
-		 NumberOfEpisodes = 49114
-		 EnvironmentSteps = 5680000
-		 AverageReturn = 1072.0999755859375
-		 AverageEpisodeLength = 460.8999938964844 
-
-2024-07-05 23:56:58,772 - INFO
-
-         Step : 1430000
-         Loss : 3.584944248199463 
-		 NumberOfEpisodes = 49233
-		 EnvironmentSteps = 5720000
-		 AverageReturn = 596.0
-		 AverageEpisodeLength = 248.5 
-
-2024-07-06 00:04:19,225 - INFO
-
-         Step : 1440000
-         Loss : 2.5867090225219727 
-		 NumberOfEpisodes = 49366
-		 EnvironmentSteps = 5760000
-		 AverageReturn = 835.2999877929688
-		 AverageEpisodeLength = 361.1000061035156 
-
-2024-07-06 00:11:51,154 - INFO
-
-         Step : 1450000
-         Loss : 3.845304489135742 
-		 NumberOfEpisodes = 49499
-		 EnvironmentSteps = 5800000
-		 AverageReturn = 759.7000122070312
-		 AverageEpisodeLength = 268.3999938964844 
-
-2024-07-06 00:19:14,412 - INFO
-
-         Step : 1460000
-         Loss : 2.495999336242676 
-		 NumberOfEpisodes = 49621
-		 EnvironmentSteps = 5840000
-		 AverageReturn = 785.7000122070312
-		 AverageEpisodeLength = 298.5 
-
-2024-07-06 00:26:41,269 - INFO
-
-         Step : 1470000
-         Loss : 3.7998383045196533 
-		 NumberOfEpisodes = 49747
-		 EnvironmentSteps = 5880000
-		 AverageReturn = 842.7999877929688
-		 AverageEpisodeLength = 338.29998779296875 
-
-2024-07-06 00:34:12,522 - INFO
-
-         Step : 1480000
-         Loss : 2.7269821166992188 
-		 NumberOfEpisodes = 49869
-		 EnvironmentSteps = 5920000
-		 AverageReturn = 825.7000122070312
-		 AverageEpisodeLength = 324.79998779296875 
-
-2024-07-06 00:41:55,789 - INFO
-
-         Step : 1490000
-         Loss : 9.555063247680664 
-		 NumberOfEpisodes = 49989
-		 EnvironmentSteps = 5960000
-		 AverageReturn = 934.7999877929688
-		 AverageEpisodeLength = 368.70001220703125 
-
-2024-07-06 00:49:32,086 - INFO
-
-         Step : 1500000
-         Loss : 1.4109293222427368 
-		 NumberOfEpisodes = 50135
-		 EnvironmentSteps = 6000000
-		 AverageReturn = 691.7000122070312
-		 AverageEpisodeLength = 321.1000061035156 
-
-2024-07-06 00:56:59,485 - INFO
-
-         Step : 1510000
-         Loss : 4.016905307769775 
-		 NumberOfEpisodes = 50237
-		 EnvironmentSteps = 6040000
-		 AverageReturn = 1136.199951171875
-		 AverageEpisodeLength = 478.3999938964844 
-
-2024-07-06 01:04:29,520 - INFO
-
-         Step : 1520000
-         Loss : 5.719146728515625 
-		 NumberOfEpisodes = 50348
-		 EnvironmentSteps = 6080000
-		 AverageReturn = 807.4000244140625
-		 AverageEpisodeLength = 343.1000061035156 
-
-2024-07-06 01:12:03,601 - INFO
-
-         Step : 1530000
-         Loss : 1.6247498989105225 
-		 NumberOfEpisodes = 50463
-		 EnvironmentSteps = 6120000
-		 AverageReturn = 590.5999755859375
-		 AverageEpisodeLength = 238.60000610351562 
-
-2024-07-06 01:19:35,798 - INFO
-
-         Step : 1540000
-         Loss : 2.8384478092193604 
-		 NumberOfEpisodes = 50586
-		 EnvironmentSteps = 6160000
-		 AverageReturn = 786.7000122070312
-		 AverageEpisodeLength = 323.0 
-
-2024-07-06 01:27:10,597 - INFO
-
-         Step : 1550000
-         Loss : 3.7907333374023438 
-		 NumberOfEpisodes = 50721
-		 EnvironmentSteps = 6200000
-		 AverageReturn = 637.5999755859375
-		 AverageEpisodeLength = 232.39999389648438 
-
-2024-07-06 01:34:40,406 - INFO
-
-         Step : 1560000
-         Loss : 3.3560593128204346 
-		 NumberOfEpisodes = 50840
-		 EnvironmentSteps = 6240000
-		 AverageReturn = 853.4000244140625
-		 AverageEpisodeLength = 343.0 
-
-2024-07-06 01:42:05,875 - INFO
-
-         Step : 1570000
-         Loss : 3.4577152729034424 
-		 NumberOfEpisodes = 50986
-		 EnvironmentSteps = 6280000
-		 AverageReturn = 463.1000061035156
-		 AverageEpisodeLength = 177.39999389648438 
-
-2024-07-06 01:49:30,914 - INFO
-
-         Step : 1580000
-         Loss : 4.419651031494141 
-		 NumberOfEpisodes = 51109
-		 EnvironmentSteps = 6320000
-		 AverageReturn = 740.0
-		 AverageEpisodeLength = 308.5 
-
-2024-07-06 01:56:55,206 - INFO
-
-         Step : 1590000
-         Loss : 4.090346336364746 
-		 NumberOfEpisodes = 51221
-		 EnvironmentSteps = 6360000
-		 AverageReturn = 817.7000122070312
-		 AverageEpisodeLength = 317.5 
-
-2024-07-06 02:04:21,833 - INFO
-
-         Step : 1600000
-         Loss : 2.8787379264831543 
-		 NumberOfEpisodes = 51346
-		 EnvironmentSteps = 6400000
-		 AverageReturn = 558.9000244140625
-		 AverageEpisodeLength = 244.8000030517578 
-
-2024-07-06 02:04:21,959 - INFO
-======= Saving training video at step 1600000 ======= 
-
-2024-07-06 02:04:21,959 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 02:04:22,933 - INFO
-======= Evaluating agent and saving evaluation video at step 1600000 ======= 
-
-2024-07-06 02:04:22,948 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 02:04:38,535 - INFO
-======= Saving checkpoint at step 1600000 ======= 
-
-2024-07-06 02:04:39,524 - INFO
-Saved checkpoint: ./checkpoint\ckpt-1600000 
-
-2024-07-06 02:11:56,264 - INFO
-
-         Step : 1610000
-         Loss : 2.834713935852051 
-		 NumberOfEpisodes = 51476
-		 EnvironmentSteps = 6440000
-		 AverageReturn = 725.2000122070312
-		 AverageEpisodeLength = 282.5 
-
-2024-07-06 02:19:22,975 - INFO
-
-         Step : 1620000
-         Loss : 4.303472518920898 
-		 NumberOfEpisodes = 51595
-		 EnvironmentSteps = 6480000
-		 AverageReturn = 696.5999755859375
-		 AverageEpisodeLength = 311.1000061035156 
-
-2024-07-06 02:26:42,475 - INFO
-
-         Step : 1630000
-         Loss : 5.650280952453613 
-		 NumberOfEpisodes = 51714
-		 EnvironmentSteps = 6520000
-		 AverageReturn = 796.4000244140625
-		 AverageEpisodeLength = 292.8999938964844 
-
-2024-07-06 02:34:12,863 - INFO
-
-         Step : 1640000
-         Loss : 3.534240961074829 
-		 NumberOfEpisodes = 51841
-		 EnvironmentSteps = 6560000
-		 AverageReturn = 587.2999877929688
-		 AverageEpisodeLength = 221.5 
-
-2024-07-06 02:41:40,490 - INFO
-
-         Step : 1650000
-         Loss : 3.1425857543945312 
-		 NumberOfEpisodes = 51975
-		 EnvironmentSteps = 6600000
-		 AverageReturn = 477.5
-		 AverageEpisodeLength = 178.3000030517578 
-
-2024-07-06 02:49:08,336 - INFO
-
-         Step : 1660000
-         Loss : 2.6387500762939453 
-		 NumberOfEpisodes = 52093
-		 EnvironmentSteps = 6640000
-		 AverageReturn = 813.2999877929688
-		 AverageEpisodeLength = 332.1000061035156 
-
-2024-07-06 02:56:28,660 - INFO
-
-         Step : 1670000
-         Loss : 3.16324520111084 
-		 NumberOfEpisodes = 52222
-		 EnvironmentSteps = 6680000
-		 AverageReturn = 803.5
-		 AverageEpisodeLength = 316.3999938964844 
-
-2024-07-06 03:03:54,078 - INFO
-
-         Step : 1680000
-         Loss : 8.77410888671875 
-		 NumberOfEpisodes = 52348
-		 EnvironmentSteps = 6720000
-		 AverageReturn = 555.5999755859375
-		 AverageEpisodeLength = 258.29998779296875 
-
-2024-07-06 03:11:21,774 - INFO
-
-         Step : 1690000
-         Loss : 6.426823139190674 
-		 NumberOfEpisodes = 52462
-		 EnvironmentSteps = 6760000
-		 AverageReturn = 1117.0999755859375
-		 AverageEpisodeLength = 421.0 
-
-2024-07-06 03:18:50,409 - INFO
-
-         Step : 1700000
-         Loss : 5.1273040771484375 
-		 NumberOfEpisodes = 52591
-		 EnvironmentSteps = 6800000
-		 AverageReturn = 804.2000122070312
-		 AverageEpisodeLength = 290.20001220703125 
-
-2024-07-06 03:26:27,985 - INFO
-
-         Step : 1710000
-         Loss : 3.851900339126587 
-		 NumberOfEpisodes = 52706
-		 EnvironmentSteps = 6840000
-		 AverageReturn = 605.5
-		 AverageEpisodeLength = 233.89999389648438 
-
-2024-07-06 03:34:00,889 - INFO
-
-         Step : 1720000
-         Loss : 2.636641025543213 
-		 NumberOfEpisodes = 52830
-		 EnvironmentSteps = 6880000
-		 AverageReturn = 880.5999755859375
-		 AverageEpisodeLength = 346.3999938964844 
-
-2024-07-06 03:41:26,894 - INFO
-
-         Step : 1730000
-         Loss : 2.2387890815734863 
-		 NumberOfEpisodes = 52940
-		 EnvironmentSteps = 6920000
-		 AverageReturn = 781.7000122070312
-		 AverageEpisodeLength = 312.70001220703125 
-
-2024-07-06 03:49:00,420 - INFO
-
-         Step : 1740000
-         Loss : 3.7318363189697266 
-		 NumberOfEpisodes = 53063
-		 EnvironmentSteps = 6960000
-		 AverageReturn = 826.5
-		 AverageEpisodeLength = 349.5 
-
-2024-07-06 03:56:29,273 - INFO
-
-         Step : 1750000
-         Loss : 2.6580402851104736 
-		 NumberOfEpisodes = 53192
-		 EnvironmentSteps = 7000000
-		 AverageReturn = 939.5999755859375
-		 AverageEpisodeLength = 389.3999938964844 
-
-2024-07-06 04:04:05,578 - INFO
-
-         Step : 1760000
-         Loss : 4.4636640548706055 
-		 NumberOfEpisodes = 53319
-		 EnvironmentSteps = 7040000
-		 AverageReturn = 891.5999755859375
-		 AverageEpisodeLength = 350.70001220703125 
-
-2024-07-06 04:11:40,925 - INFO
-
-         Step : 1770000
-         Loss : 4.125149250030518 
-		 NumberOfEpisodes = 53433
-		 EnvironmentSteps = 7080000
-		 AverageReturn = 742.2999877929688
-		 AverageEpisodeLength = 311.29998779296875 
-
-2024-07-06 04:19:06,261 - INFO
-
-         Step : 1780000
-         Loss : 1.8889105319976807 
-		 NumberOfEpisodes = 53550
-		 EnvironmentSteps = 7120000
-		 AverageReturn = 563.7000122070312
-		 AverageEpisodeLength = 224.6999969482422 
-
-2024-07-06 04:26:38,351 - INFO
-
-         Step : 1790000
-         Loss : 1.7152321338653564 
-		 NumberOfEpisodes = 53675
-		 EnvironmentSteps = 7160000
-		 AverageReturn = 703.4000244140625
-		 AverageEpisodeLength = 278.79998779296875 
-
-2024-07-06 04:33:55,717 - INFO
-
-         Step : 1800000
-         Loss : 2.786435842514038 
-		 NumberOfEpisodes = 53792
-		 EnvironmentSteps = 7200000
-		 AverageReturn = 844.0
-		 AverageEpisodeLength = 337.1000061035156 
-
-2024-07-06 04:33:55,827 - INFO
-======= Saving training video at step 1800000 ======= 
-
-2024-07-06 04:33:55,842 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 04:33:57,178 - INFO
-======= Evaluating agent and saving evaluation video at step 1800000 ======= 
-
-2024-07-06 04:33:57,194 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 04:34:24,042 - INFO
-======= Saving checkpoint at step 1800000 ======= 
-
-2024-07-06 04:34:25,720 - INFO
-Saved checkpoint: ./checkpoint\ckpt-1800000 
-
-2024-07-06 04:41:52,857 - INFO
-
-         Step : 1810000
-         Loss : 1.8510736227035522 
-		 NumberOfEpisodes = 53913
-		 EnvironmentSteps = 7240000
-		 AverageReturn = 852.7999877929688
-		 AverageEpisodeLength = 343.6000061035156 
-
-2024-07-06 04:49:13,340 - INFO
-
-         Step : 1820000
-         Loss : 7.176543235778809 
-		 NumberOfEpisodes = 54019
-		 EnvironmentSteps = 7280000
-		 AverageReturn = 705.0999755859375
-		 AverageEpisodeLength = 272.0 
-
-2024-07-06 04:56:34,614 - INFO
-
-         Step : 1830000
-         Loss : 3.958014488220215 
-		 NumberOfEpisodes = 54130
-		 EnvironmentSteps = 7320000
-		 AverageReturn = 941.2000122070312
-		 AverageEpisodeLength = 403.1000061035156 
-
-2024-07-06 05:03:52,637 - INFO
-
-         Step : 1840000
-         Loss : 3.309898853302002 
-		 NumberOfEpisodes = 54247
-		 EnvironmentSteps = 7360000
-		 AverageReturn = 1018.9000244140625
-		 AverageEpisodeLength = 417.20001220703125 
-
-2024-07-06 05:11:17,557 - INFO
-
-         Step : 1850000
-         Loss : 4.311172008514404 
-		 NumberOfEpisodes = 54356
-		 EnvironmentSteps = 7400000
-		 AverageReturn = 662.2999877929688
-		 AverageEpisodeLength = 263.79998779296875 
-
-2024-07-06 05:18:32,819 - INFO
-
-         Step : 1860000
-         Loss : 7.021148681640625 
-		 NumberOfEpisodes = 54472
-		 EnvironmentSteps = 7440000
-		 AverageReturn = 820.5
-		 AverageEpisodeLength = 345.29998779296875 
-
-2024-07-06 05:25:51,761 - INFO
-
-         Step : 1870000
-         Loss : 2.3108129501342773 
-		 NumberOfEpisodes = 54602
-		 EnvironmentSteps = 7480000
-		 AverageReturn = 848.5999755859375
-		 AverageEpisodeLength = 337.6000061035156 
-
-2024-07-06 05:33:09,815 - INFO
-
-         Step : 1880000
-         Loss : 4.5325727462768555 
-		 NumberOfEpisodes = 54720
-		 EnvironmentSteps = 7520000
-		 AverageReturn = 705.2000122070312
-		 AverageEpisodeLength = 292.29998779296875 
-
-2024-07-06 05:40:36,733 - INFO
-
-         Step : 1890000
-         Loss : 9.273994445800781 
-		 NumberOfEpisodes = 54847
-		 EnvironmentSteps = 7560000
-		 AverageReturn = 961.2999877929688
-		 AverageEpisodeLength = 332.0 
-
-2024-07-06 05:47:52,844 - INFO
-
-         Step : 1900000
-         Loss : 1.6648781299591064 
-		 NumberOfEpisodes = 54969
-		 EnvironmentSteps = 7600000
-		 AverageReturn = 884.5999755859375
-		 AverageEpisodeLength = 332.20001220703125 
-
-2024-07-06 05:55:13,510 - INFO
-
-         Step : 1910000
-         Loss : 4.285922050476074 
-		 NumberOfEpisodes = 55084
-		 EnvironmentSteps = 7640000
-		 AverageReturn = 957.5
-		 AverageEpisodeLength = 381.70001220703125 
-
-2024-07-06 06:02:29,820 - INFO
-
-         Step : 1920000
-         Loss : 2.612738847732544 
-		 NumberOfEpisodes = 55195
-		 EnvironmentSteps = 7680000
-		 AverageReturn = 851.5999755859375
-		 AverageEpisodeLength = 360.1000061035156 
-
-2024-07-06 06:09:46,752 - INFO
-
-         Step : 1930000
-         Loss : 3.433168649673462 
-		 NumberOfEpisodes = 55319
-		 EnvironmentSteps = 7720000
-		 AverageReturn = 759.0999755859375
-		 AverageEpisodeLength = 320.0 
-
-2024-07-06 06:16:58,831 - INFO
-
-         Step : 1940000
-         Loss : 3.400834321975708 
-		 NumberOfEpisodes = 55447
-		 EnvironmentSteps = 7760000
-		 AverageReturn = 790.5999755859375
-		 AverageEpisodeLength = 329.29998779296875 
-
-2024-07-06 06:24:17,832 - INFO
-
-         Step : 1950000
-         Loss : 2.906935691833496 
-		 NumberOfEpisodes = 55552
-		 EnvironmentSteps = 7800000
-		 AverageReturn = 924.7000122070312
-		 AverageEpisodeLength = 358.3999938964844 
-
-2024-07-06 06:31:32,218 - INFO
-
-         Step : 1960000
-         Loss : 2.874494791030884 
-		 NumberOfEpisodes = 55657
-		 EnvironmentSteps = 7840000
-		 AverageReturn = 908.2000122070312
-		 AverageEpisodeLength = 364.70001220703125 
-
-2024-07-06 06:38:52,109 - INFO
-
-         Step : 1970000
-         Loss : 2.9647557735443115 
-		 NumberOfEpisodes = 55782
-		 EnvironmentSteps = 7880000
-		 AverageReturn = 604.7999877929688
-		 AverageEpisodeLength = 239.6999969482422 
-
-2024-07-06 06:46:22,374 - INFO
-
-         Step : 1980000
-         Loss : 3.485346794128418 
-		 NumberOfEpisodes = 55904
-		 EnvironmentSteps = 7920000
-		 AverageReturn = 538.4000244140625
-		 AverageEpisodeLength = 209.1999969482422 
-
-2024-07-06 06:53:45,310 - INFO
-
-         Step : 1990000
-         Loss : 2.448957920074463 
-		 NumberOfEpisodes = 56017
-		 EnvironmentSteps = 7960000
-		 AverageReturn = 971.2999877929688
-		 AverageEpisodeLength = 393.3999938964844 
-
-2024-07-06 07:01:16,502 - INFO
-
-         Step : 2000000
-         Loss : 3.005636215209961 
-		 NumberOfEpisodes = 56127
-		 EnvironmentSteps = 8000000
-		 AverageReturn = 800.2999877929688
-		 AverageEpisodeLength = 289.0 
-
-2024-07-06 07:01:16,534 - INFO
-======= Saving training video at step 2000000 ======= 
-
-2024-07-06 07:01:16,550 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 07:01:17,367 - INFO
-======= Evaluating agent and saving evaluation video at step 2000000 ======= 
-
-2024-07-06 07:01:17,383 - WARNING
-IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (200, 150) to (208, 160) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to None (risking incompatibility). You may also see a FFMPEG warning concerning speedloss due to data not being aligned. 
-
-2024-07-06 07:01:30,800 - INFO
-======= Saving checkpoint at step 2000000 ======= 
-
-2024-07-06 07:01:31,851 - INFO
-Saved checkpoint: ./checkpoint\ckpt-2000000 
-
-2024-07-06 07:01:42,934 - INFO
-======= A segment completed at step 2000000 ======= 
-
-2024-07-06 07:01:42,934 - INFO
-========================================================== Finished 1000000 Training iteration in: 12:13:51.509480. Total training steps: 2000000 ========================================================== 
+2024-07-11 09:07:53,728 - INFO
+========================================================== Finished 500000 Training iteration in: 9:13:05.171677. Total training steps: 500000 ========================================================== 
 
