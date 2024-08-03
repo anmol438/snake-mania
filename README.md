@@ -29,3 +29,10 @@ https://github.com/anmol438/snake-mania/assets/50985412/20d1e248-50da-4f03-b3ba-
 Install **Tf-Agents** version 0.19.0 : <code>pip install tf-agents==0.19.0</code>  
 Install **Tensorflow** version 2.15.0 : <code>pip install tensorflow==2.15.0</code>  
 Install **Imageio** versio 2.4.0 : <code>pip install imageio==2.4.0</code>  
+
+# Agent Training
+The agent has been trained for few million steps in the environment to make the snake eat the food without any collision. It has shown good performance.
+
+# Load Model and Continue Training
+To directly explore the trained model or continue the training for much better performance, create the RL components with same architecture as in <code>./training_env/snake-mania_training.py</code> and load the checkpointer.  
+The <code>agent.policy.action(time_step).action</code> can be used after loading the model to chose action and explore the trained model.
