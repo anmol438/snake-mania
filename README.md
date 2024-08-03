@@ -1,13 +1,13 @@
 
 # Environment: snake-mania
-A custom OpenAI Gym based environment for training a snake to eat food.
+A custom OpenAI Gym-based environment for training a snake to eat food.
 
 # Installing environment
-Create a python environment with python version >= 3.8  (preferably py3.10)
-Run command <code>pip install -e snake-mania</code> in <code>./env_package/</code> folder to install the snakemania gym environment.
+Create a Python environment with Python version >= 3.8  (preferably py3.10)
+Run command <code>pip install -e snake-mania</code> in <code>./env_package/</code> folder to install the Snakemania gym environment.
 
 # Creating Environment Instance
-After installating the package, you can create the instance of the evironment as:
+After installing the package, you can create the instance of the environment as:
 ```python
 import gym
 import snake_mania
@@ -31,8 +31,11 @@ Install **Tensorflow** version 2.15.0 : <code>pip install tensorflow==2.15.0</co
 Install **Imageio** versio 2.4.0 : <code>pip install imageio==2.4.0</code>  
 
 # Agent Training
-The agent has been trained for few million steps in the environment to make the snake eat the food without any collision. It has shown good performance.
+The agent has been trained for a few million steps in the environment to make the snake eat the food without collision. It has shown good performance.
+
+https://github.com/user-attachments/assets/84dbb9ce-13b5-4ec0-b656-3ab5256bedfc
+
 
 # Load Model and Continue Training
-To directly explore the trained model or continue the training for much better performance, create the RL components with same architecture as in <code>./training_env/snake-mania_training.py</code> and load the checkpointer.  
-The <code>agent.policy.action(time_step).action</code> can be used after loading the model to chose action and explore the trained model.
+To directly explore the trained model or continue the training for much better performance, create the RL components with the same architecture as in <code>./training_env/snake-mania_training.py</code> and load the checkpointer.  
+The <code>agent.policy.action(time_step).action</code> can be used after loading the model to choose an action and explore the trained model.
