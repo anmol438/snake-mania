@@ -37,5 +37,5 @@ https://github.com/user-attachments/assets/84dbb9ce-13b5-4ec0-b656-3ab5256bedfc
 
 
 # Load Model and Continue Training
-To directly explore the trained model or continue the training for much better performance, create the RL components with the same architecture as in <code>./training_env/snake-mania_training.py</code> and load the checkpointer.  
+To directly explore the trained model or continue the training for much better performance, create the RL components with the same architecture as in <code>./training_env/snake_mania_training.py</code> and load the checkpointer.  
 The <code>agent.policy.action(time_step).action</code> can be used after loading the model to choose an action and explore the trained model.
